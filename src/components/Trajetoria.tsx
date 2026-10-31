@@ -29,7 +29,6 @@ const nomeMes = (am: string) => {
   return `${MESES[Number(m) - 1]}/${a.slice(2)}`
 }
 
-type Filtro = 'todos' | 'meus'
 
 export default function Trajetoria({ projetos, onAbrir }: { projetos: Projeto[]; onAbrir: (repo: string) => void }) {
   const meses = useMemo(() => {
@@ -40,7 +39,6 @@ export default function Trajetoria({ projetos, onAbrir }: { projetos: Projeto[];
 
   const [indice, setIndice] = useState(meses.length - 1)
   const [tocando, setTocando] = useState(false)
-  const [filtro, setFiltro] = useState<Filtro>('todos')
   const trilho = useRef<HTMLDivElement>(null)
   const atual = meses[indice]
 
@@ -62,9 +60,7 @@ export default function Trajetoria({ projetos, onAbrir }: { projetos: Projeto[];
     }
   }, [atual])
 
-  const visiveis = projetos.filter((p) => filtro === 'todos' || p.papel !== 'equipe')
-  const ate = visiveis.filter((p) => p.inicio.slice(0, 7) <= atual)
-  const meusAte = ate.filter((p) => p.papel !== 'equipe').length
+  const ate = projetos.filter((p) => p.inicio.slice(0, 7) <= atual)
 
   const tocar = () => {
     if (indice >= meses.length - 1) setIndice(0)
@@ -96,17 +92,13 @@ export default function Trajetoria({ projetos, onAbrir }: { projetos: Projeto[];
         />
         <div className="tempo-contador">
           <strong>{nomeMes(atual)}</strong>
-          <span>{ate.length} sistemas · {meusAte} com minha participação</span>
-        </div>
-        <div className="segmentado" role="group" aria-label="Filtro">
-          <button className={filtro === 'todos' ? 'ativo' : ''} onClick={() => setFiltro('todos')}>Todos</button>
-          <button className={filtro === 'meus' ? 'ativo' : ''} onClick={() => setFiltro('meus')}>Com minha participação</button>
+          <span>{ate.length} sistemas com minha participação</span>
         </div>
       </div>
 
       <div className="trilho" ref={trilho}>
         {meses.map((m, i) => {
-          const doMes = visiveis.filter((p) => p.inicio.slice(0, 7) === m)
+          const doMes = projetos.filter((p) => p.inicio.slice(0, 7) === m)
           const futuro = i > indice
           return (
             <div key={m} data-mes={m} className={`tempo-coluna ${futuro ? 'futuro' : ''} ${m === atual ? 'atual' : ''}`}>

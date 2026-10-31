@@ -24,8 +24,6 @@ export default function Projetos({ projetos, selecionado, onSelecionar }: Props)
   }, [projetos, busca])
 
   const projeto = projetos.find((p) => p.repo === selecionado) ?? projetos[0]
-  const meus = lista.filter((p) => p.papel !== 'equipe')
-  const equipe = lista.filter((p) => p.papel === 'equipe')
 
   return (
     <section id="projetos" className="secao">
@@ -40,8 +38,7 @@ export default function Projetos({ projetos, selecionado, onSelecionar }: Props)
             <Search size={16} />
             <input value={busca} onChange={(e) => setBusca(e.target.value)} placeholder="Buscar sistema ou tecnologia" />
           </label>
-          <Grupo titulo="Com minha participação" itens={meus} ativo={projeto?.repo} onSelecionar={onSelecionar} />
-          <Grupo titulo="Ecossistema da equipe" itens={equipe} ativo={projeto?.repo} onSelecionar={onSelecionar} />
+          <Grupo titulo="Com minha participação" itens={lista} ativo={projeto?.repo} onSelecionar={onSelecionar} />
         </aside>
 
         <AnimatePresence mode="wait">
