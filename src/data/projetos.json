@@ -1,0 +1,3079 @@
+[
+  {
+    "repo": "SGI",
+    "nome": "Sistema de Gestão de Indicadores",
+    "sigla": "SGI",
+    "categoria": "Corporativo",
+    "resumo": "Cada área lança mensalmente seus indicadores, e a gestão acompanha metas, tendências e a disciplina de lançamento.",
+    "problema": "Os indicadores de todas as áreas precisavam ser consolidados mês a mês, e os gestores cobravam os lançamentos pendentes por WhatsApp, sem números confiáveis. O SGI dá a cada área o lançamento do que lhe cabe, marca atrasos e reúne metas, gráficos e relatórios de acompanhamento num só painel.",
+    "comoUsa": [
+      "Entra com o login corporativo",
+      "Vê no painel produção, vendas, metas do ciclo e os indicadores da sua área",
+      "Lança os valores mensais dos seus indicadores",
+      "Analisa gráficos, comparações e tendências",
+      "A direção gerencia permissões e gera o relatório de acompanhamento dos lançamentos"
+    ],
+    "funcionalidades": [
+      "Painel que se adapta ao cargo",
+      "Lançamento mensal com status de atraso por área",
+      "Mapa de categorias em seis ramos de negócio, com metas mensais",
+      "Estatísticas, comparações e linha do tempo",
+      "Relatório de pendências pronto para WhatsApp ou imagem",
+      "Permissões por categoria e indicador, auditoria e tutoriais guiados"
+    ],
+    "usuarios": "Responsáveis pelos indicadores de cada área, gerentes, gestores e direção.",
+    "impacto": "Mais de 2.100 lançamentos mensais de indicadores centralizados no sistema.",
+    "stack": [
+      "React 18",
+      "TypeScript",
+      "Vite (SWC)",
+      "React Router",
+      "TanStack Query",
+      "Tailwind CSS",
+      "shadcn/ui + Radix",
+      "MUI (Material) + MUI Icons",
+      "Recharts",
+      "xlsx",
+      "html2canvas",
+      "Supabase (PostgREST + RLS + RPC + Edge Function)",
+      "Ollama (opcional)",
+      "node:test",
+      "Docker + nginx"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 211
+    },
+    "inicio": "2025-06-10",
+    "ultimaAtividade": "2026-10-14",
+    "prints": [
+      {
+        "src": "midia/SGI/01-dashboard.webp",
+        "legenda": "Dashboard: produção, vendas, metas do ciclo e tendência de lançamentos"
+      },
+      {
+        "src": "midia/SGI/02-mapa-categorias.webp",
+        "legenda": "Mapa de categorias de indicadores pelas seis áreas da empresa"
+      },
+      {
+        "src": "midia/SGI/03-graficos-categoria.webp",
+        "legenda": "Gráfico de evolução mensal dos indicadores da categoria com a meta"
+      },
+      {
+        "src": "midia/SGI/04-lancamento.webp",
+        "legenda": "Lançamento mensal de um indicador pendente com observação do mês"
+      },
+      {
+        "src": "midia/SGI/05-relatorio-lancamentos.webp",
+        "legenda": "Acompanhamento de lançamentos por área, pronto para WhatsApp ou imagem"
+      },
+      {
+        "src": "midia/SGI/06-usuarios.webp",
+        "legenda": "Usuários do SSO com cargo e área no SGI"
+      },
+      {
+        "src": "midia/SGI/07-visao-gerente.webp",
+        "legenda": "Visão de um gerente: só as categorias da sua área ficam visíveis"
+      }
+    ],
+    "video": "midia/SGI/video.mp4",
+    "poster": "midia/SGI/poster.jpg"
+  },
+  {
+    "repo": "META",
+    "nome": "Gerador de Artes de Metas de Produção",
+    "sigla": "META",
+    "categoria": "Produção",
+    "resumo": "Gera a arte de divulgação das metas mensais de produção, com barras de progresso, bonificações e prêmios.",
+    "problema": "Divulgar mensalmente o andamento das metas de produção para a fábrica exigia montar uma arte a cada atualização. O gerador permite preencher mês, percentuais, bonificações e prêmios, ver a prévia e baixar a imagem pronta no padrão visual da empresa.",
+    "comoUsa": [
+      "Entra com o login corporativo",
+      "Seleciona o mês e informa o percentual atingido de cada meta",
+      "Ajusta bonificações e textos de prêmio",
+      "Configura os nomes das metas e a paleta de cores",
+      "Baixa a arte pronta em imagem"
+    ],
+    "funcionalidades": [
+      "Até quatro metas com percentuais e bonificações",
+      "Prévia atualizada em tempo real",
+      "Barras de progresso com faixas de 75% e 100%",
+      "Textos personalizados de destaque e prêmio",
+      "Escolha de paleta de cores",
+      "Download da arte em imagem"
+    ],
+    "usuarios": "Gestão de produção e comunicação interna.",
+    "impacto": null,
+    "stack": [
+      "React 18",
+      "Vite",
+      "TypeScript",
+      "shadcn/ui (Radix)",
+      "Tailwind CSS",
+      "Canvas API",
+      "SSO Flexibase (spa-bridge)",
+      "nginx",
+      "Docker",
+      "GitHub Actions (blue-green)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 74
+    },
+    "inicio": "2025-06-16",
+    "ultimaAtividade": "2026-06-23",
+    "prints": [
+      {
+        "src": "midia/META/01-gerador.webp",
+        "legenda": "Gerador da arte de metas com controles e prévia ao lado"
+      },
+      {
+        "src": "midia/META/02-arte-gerada.webp",
+        "legenda": "Arte de outubro com o progresso de cada meta, bônus e prêmios"
+      },
+      {
+        "src": "midia/META/03-configurar-metas.webp",
+        "legenda": "Configuração dos nomes, valores e bônus das quatro metas"
+      },
+      {
+        "src": "midia/META/04-cores.webp",
+        "legenda": "Paleta de cores das barras e do texto da arte"
+      },
+      {
+        "src": "midia/META/05-arte-baixada.webp",
+        "legenda": "Arte final com a nova paleta, baixada em PNG"
+      }
+    ],
+    "video": "midia/META/video.mp4",
+    "poster": "midia/META/poster.jpg"
+  },
+  {
+    "repo": "QR",
+    "nome": "Gerador de QR Code",
+    "sigla": "QR",
+    "categoria": "Corporativo",
+    "resumo": "Gerador interno de QR codes com texto, logo central, resolução configurável e histórico local.",
+    "problema": "Gerar QR codes para etiquetas, materiais e links costumava levar os colaboradores a geradores públicos na internet. O app oferece um gerador interno, rápido e protegido pelo login corporativo, com personalização e download em alta resolução.",
+    "comoUsa": [
+      "Entra com o login corporativo",
+      "Digita o link ou texto e vê a prévia instantânea",
+      "Adiciona texto abaixo do código e logo no centro, se quiser",
+      "Escolhe a resolução e baixa em PNG",
+      "Reaproveita códigos anteriores pelo histórico"
+    ],
+    "funcionalidades": [
+      "QR code com alta correção de erro",
+      "Texto opcional abaixo do código",
+      "Logo opcional no centro",
+      "Resolução configurável e download em PNG",
+      "Histórico dos últimos 50 códigos",
+      "Tema claro e escuro"
+    ],
+    "usuarios": "Colaboradores que precisam gerar QR codes.",
+    "impacto": null,
+    "stack": [
+      "React 18",
+      "Vite",
+      "JavaScript (JSX)",
+      "Tailwind CSS",
+      "shadcn/ui (Radix)",
+      "qrcode.react",
+      "html-to-image",
+      "SSO Flexibase (spa-bridge)",
+      "nginx",
+      "Docker",
+      "GitHub Actions (GHCR, blue-green)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 76
+    },
+    "inicio": "2025-09-01",
+    "ultimaAtividade": "2026-09-28",
+    "prints": [
+      {
+        "src": "midia/QR/01-gerador.webp",
+        "legenda": "Gerador de QR code com campo de conteúdo e opções avançadas"
+      },
+      {
+        "src": "midia/QR/02-qr-com-logo.webp",
+        "legenda": "QR code com logo no centro, texto abaixo e resolução de 1000 px"
+      },
+      {
+        "src": "midia/QR/03-historico.webp",
+        "legenda": "Histórico dos QR codes gerados, guardado no navegador"
+      },
+      {
+        "src": "midia/QR/04-qr-wifi.webp",
+        "legenda": "QR de Wi-Fi do showroom reaberto pelo histórico"
+      }
+    ],
+    "video": "midia/QR/video.mp4",
+    "poster": "midia/QR/poster.jpg"
+  },
+  {
+    "repo": "SCV",
+    "nome": "Sistema de Controle de Veículos",
+    "sigla": "SCV",
+    "categoria": "Suprimentos",
+    "resumo": "Gestão da frota de entregas: entregas, abastecimentos, manutenções, acertos de viagem e produtividade dos montadores.",
+    "problema": "A rotina operacional e financeira da frota de entregas estava espalhada, e calcular consumo, custo logístico e vencimentos dava trabalho e abria espaço para erro. O SCV centraliza tudo numa interface e acompanha a meta de custo logístico de até 2% sobre as entregas e o consumo de diesel por veículo.",
+    "comoUsa": [
+      "Entra com o login corporativo e acompanha o painel da operação",
+      "Registra entregas com pedido, nota, motorista, veículo e montadores",
+      "Lança abastecimentos, e o sistema calcula o consumo por veículo",
+      "Registra manutenções e acompanha vencimentos de CNH e revisões",
+      "Fecha o acerto de viagem e imprime o relatório",
+      "Consulta a produtividade dos montadores"
+    ],
+    "funcionalidades": [
+      "Entregas por motorista, por veículo e mapa de custo por estado",
+      "Consumo em km/l por veículo, com meta e justificativa",
+      "Alertas de registros suspeitos",
+      "Manutenções e vencimentos com justificativa de atraso",
+      "Acerto de viagem com frete proporcional por pedido",
+      "Produtividade dos montadores e relatórios para impressão"
+    ],
+    "usuarios": "Equipe de logística e expedição e gestão da frota.",
+    "impacto": null,
+    "stack": [
+      "React 18",
+      "TypeScript",
+      "Vite 5 (SWC)",
+      "React Router 6",
+      "TanStack Query 5",
+      "shadcn/ui + Radix",
+      "Tailwind CSS 3",
+      "Material UI Icons",
+      "react-hook-form + zod",
+      "Recharts",
+      "react-simple-maps + @svg-maps/brazil",
+      "xlsx + papaparse",
+      "react-to-print",
+      "Supabase (PostgREST + RLS)",
+      "Vitest",
+      "Docker + nginx"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 221
+    },
+    "inicio": "2025-12-03",
+    "ultimaAtividade": "2026-10-01",
+    "prints": [
+      {
+        "src": "midia/SCV/01-dashboard.webp",
+        "legenda": "Painel operacional: frota ativa, custos do mês, entregas e pendências de acerto"
+      },
+      {
+        "src": "midia/SCV/02-entregas.webp",
+        "legenda": "Controle de entregas: valor, % de frete, motorista e status"
+      },
+      {
+        "src": "midia/SCV/03-mapa-frete-uf.webp",
+        "legenda": "Mapa de impacto logístico: frete proporcional por UF frente à meta de 2%"
+      },
+      {
+        "src": "midia/SCV/04-abastecimento-veiculo.webp",
+        "legenda": "Abastecimentos de um caminhão com km rodado e consumo km/l"
+      },
+      {
+        "src": "midia/SCV/05-vencimentos.webp",
+        "legenda": "Vencimentos: CNHs de motoristas e manutenções preventivas por veículo"
+      },
+      {
+        "src": "midia/SCV/06-acertos.webp",
+        "legenda": "Acertos de viagem com adiantamento, despesas, saldo e status"
+      },
+      {
+        "src": "midia/SCV/07-acerto-detalhe.webp",
+        "legenda": "Acerto de viagem: resumo financeiro e entregas vinculadas à carga"
+      }
+    ],
+    "video": "midia/SCV/video.mp4",
+    "poster": "midia/SCV/poster.jpg"
+  },
+  {
+    "repo": "CDT",
+    "nome": "Central de Tarefas",
+    "sigla": "CDT",
+    "categoria": "Corporativo",
+    "resumo": "Gestão de projetos, atividades, to-dos e sprints por departamento, com Kanban, prioridades, indicadores e gamificação.",
+    "problema": "O departamento de desenvolvimento precisava de um lugar único para organizar projetos, priorizar demandas e enxergar quem está fazendo o quê. A ferramenta começou como Kanban de projetos ligado ao GitHub e foi estendida a outras áreas, como PCP, Supply e Diretoria, com sprints, tarefas atribuídas e indicadores.",
+    "comoUsa": [
+      "Escolhe o espaço de trabalho do seu departamento e entra com o login corporativo",
+      "Acompanha no painel seus to-dos, contadores e progresso",
+      "Move projetos no Kanban e posiciona prioridades na matriz de Eisenhower",
+      "Cria atividades e to-dos, atribui responsáveis e organiza em sprints",
+      "Ganha pontos de experiência ao concluir tarefas e acompanha o ranking da equipe",
+      "Gestores consultam indicadores, organograma e custos da área"
+    ],
+    "funcionalidades": [
+      "Espaços de trabalho por departamento com módulos habilitáveis",
+      "Kanban de projetos integrado ao GitHub",
+      "Matriz de Eisenhower com atualização em tempo real",
+      "Atividades, to-dos, comentários e sprints",
+      "Gamificação com XP, níveis, conquistas e ranking",
+      "Indicadores, organograma, custos de equipe e quadro colaborativo"
+    ],
+    "usuarios": "Equipe de desenvolvimento de sistemas e, em espaços próprios, áreas como PCP, Supply e Diretoria.",
+    "impacto": null,
+    "stack": [
+      "React 18",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "shadcn/ui (Radix)",
+      "@dnd-kit",
+      "React Router",
+      "Recharts",
+      "@xyflow/react + dagre",
+      "Excalidraw",
+      "Node.js 20",
+      "Express",
+      "Supabase (PostgreSQL, Auth, Storage, Realtime)",
+      "Octokit (GitHub API)",
+      "SSO OIDC (spa-bridge)",
+      "Docker / GHCR / nginx"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 76
+    },
+    "inicio": "2026-01-27",
+    "ultimaAtividade": "2026-07-02",
+    "prints": [
+      {
+        "src": "midia/CDT/01-workspaces.webp",
+        "legenda": "Seleção do workspace do departamento, com atalhos do perfil e catálogo por área"
+      },
+      {
+        "src": "midia/CDT/02-dashboard.webp",
+        "legenda": "Central de Tarefas do workspace: to-dos atribuídos, pendências e resumo mensal do time"
+      },
+      {
+        "src": "midia/CDT/03-projetos-kanban.webp",
+        "legenda": "Kanban de projetos do workspace com demandas totais e do usuário"
+      },
+      {
+        "src": "midia/CDT/04-projeto-todos.webp",
+        "legenda": "Projeto aberto: to-dos com XP, prazo, sprint e responsável"
+      },
+      {
+        "src": "midia/CDT/05-mapa-eisenhower.webp",
+        "legenda": "Mapa de Eisenhower com os projetos posicionados por urgência e importância"
+      },
+      {
+        "src": "midia/CDT/06-sprints.webp",
+        "legenda": "Calendário de sprints por projeto, com status e progresso das entregas"
+      },
+      {
+        "src": "midia/CDT/07-ranking.webp",
+        "legenda": "Ranking de XP do workspace com nível, streak e pódio da equipe"
+      },
+      {
+        "src": "midia/CDT/08-conquistas.webp",
+        "legenda": "Conquistas da gamificação: desbloqueadas pelo usuário, por raridade"
+      }
+    ],
+    "video": "midia/CDT/video.mp4",
+    "poster": "midia/CDT/poster.jpg"
+  },
+  {
+    "repo": "FER",
+    "nome": "Sistema de Ferramentaria",
+    "sigla": "FER",
+    "categoria": "Produção",
+    "resumo": "Controle das ferramentas da ferramentaria, com empréstimos, devoluções e histórico por ferramenta e por funcionário.",
+    "problema": "Saber quais ferramentas estavam disponíveis, emprestadas ou em manutenção, e com qual funcionário cada uma estava, exigia um controle dedicado. O sistema registra cada empréstimo com finalidade e data, só libera ferramentas disponíveis e guarda o histórico completo.",
+    "comoUsa": [
+      "Consulta no painel as ferramentas disponíveis, as emprestadas e os empréstimos ativos",
+      "Cadastra ferramentas com código, categoria, marca, localização e status",
+      "Cadastra os funcionários com matrícula e departamento",
+      "Registra o empréstimo escolhendo ferramenta, funcionário, data e finalidade",
+      "Na devolução, marca como devolvida e a ferramenta volta a ficar disponível"
+    ],
+    "funcionalidades": [
+      "Cadastro de ferramentas com status disponível, emprestada ou em manutenção",
+      "Cadastro de funcionários",
+      "Empréstimo e devolução com atualização automática do status",
+      "Bloqueio de empréstimo de ferramenta indisponível",
+      "Histórico por ferramenta e por funcionário",
+      "Painel com estatísticas e gráficos"
+    ],
+    "usuarios": "Responsáveis pela ferramentaria da fábrica.",
+    "impacto": null,
+    "stack": [
+      "React 18",
+      "Vite 5",
+      "TypeScript",
+      "Material UI 7",
+      "ApexCharts",
+      "Axios",
+      "React Router 6",
+      "Node.js",
+      "Express",
+      "Supabase (Postgres)"
+    ],
+    "status": "não informado",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 15
+    },
+    "inicio": "2026-01-29",
+    "ultimaAtividade": "2026-06-23",
+    "prints": [
+      {
+        "src": "midia/FER/01-dashboard.webp",
+        "legenda": "Dashboard da Ferramentaria: total, disponíveis, em uso e em manutenção, com evolução dos empréstimos"
+      },
+      {
+        "src": "midia/FER/02-dashboard-graficos.webp",
+        "legenda": "Status das ferramentas, taxa de utilização e ferramentas mais emprestadas"
+      },
+      {
+        "src": "midia/FER/03-ferramentas.webp",
+        "legenda": "Ferramentas cadastradas com código, categoria, marca, localização e status"
+      },
+      {
+        "src": "midia/FER/04-emprestimos-ativos.webp",
+        "legenda": "Empréstimos ativos: ferramenta, colaborador, matrícula, data e finalidade"
+      },
+      {
+        "src": "midia/FER/05-novo-emprestimo.webp",
+        "legenda": "Novo empréstimo: só aparecem as ferramentas disponíveis"
+      }
+    ],
+    "video": "midia/FER/video.mp4",
+    "poster": "midia/FER/poster.jpg"
+  },
+  {
+    "repo": "PDF",
+    "nome": "Ferramentas de PDF",
+    "sigla": "PDF",
+    "categoria": "Corporativo",
+    "resumo": "Ferramentas para juntar, dividir, comprimir, converter, editar e assinar PDFs, tudo processado no próprio navegador.",
+    "problema": "Tarefas comuns com PDF, como juntar, separar ou comprimir arquivos, costumam levar as pessoas a sites públicos que recebem documentos internos. O PDF Tools oferece essas operações dentro do ambiente da empresa, com login corporativo, processando os arquivos no navegador sem enviá-los a servidores.",
+    "comoUsa": [
+      "Entra com o login corporativo",
+      "Escolhe a ferramenta na barra lateral",
+      "Arrasta os arquivos para a área de envio",
+      "Ajusta as opções, como ordem das páginas ou qualidade da compressão",
+      "Confere a prévia e baixa o resultado"
+    ],
+    "funcionalidades": [
+      "Juntar e reorganizar PDFs com prévia",
+      "Dividir por intervalos de páginas",
+      "Comprimir com comparação lado a lado",
+      "Converter entre PDF e Word",
+      "Editar, assinar e aplicar marca d'água",
+      "Reparar arquivos e modo apresentação"
+    ],
+    "usuarios": "Todos os colaboradores com login corporativo.",
+    "impacto": null,
+    "stack": [
+      "React 18",
+      "Vite 5",
+      "TypeScript",
+      "React Router 6",
+      "pdf-lib",
+      "pdfjs-dist",
+      "docx",
+      "jsPDF",
+      "html2canvas",
+      "JSZip",
+      "Supabase (contador)",
+      "SSO Flexibase (spa-bridge)",
+      "nginx",
+      "Docker",
+      "GitHub Actions (blue-green)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 46
+    },
+    "inicio": "2026-01-29",
+    "ultimaAtividade": "2026-06-23",
+    "prints": [
+      {
+        "src": "midia/PDF/01-ferramentas.webp",
+        "legenda": "Tela inicial com as ferramentas na barra lateral: juntar, dividir, comprimir, editar, assinar e outras"
+      },
+      {
+        "src": "midia/PDF/02-juntar-organizar.webp",
+        "legenda": "Juntar e organizar: páginas dos dois PDFs em miniaturas, coloridas por arquivo"
+      },
+      {
+        "src": "midia/PDF/03-dividir.webp",
+        "legenda": "Dividir PDF: intervalo de páginas, página única ou todas separadas (ZIP)"
+      },
+      {
+        "src": "midia/PDF/04-comprimir.webp",
+        "legenda": "Comprimir PDF: comparação de qualidade lado a lado antes de baixar"
+      },
+      {
+        "src": "midia/PDF/05-comprimir-nivel.webp",
+        "legenda": "Nível de compressão ajustável com tamanho e redução estimados"
+      }
+    ],
+    "video": "midia/PDF/video.mp4",
+    "poster": "midia/PDF/poster.jpg"
+  },
+  {
+    "repo": "TPM",
+    "nome": "Manutenção Produtiva Total",
+    "sigla": "TPM",
+    "categoria": "Produção",
+    "resumo": "Gestão da manutenção industrial: máquinas, chamados, ordens preventivas e corretivas, paradas, previsão de falhas e indicadores.",
+    "problema": "Chamados, ordens, paradas e peças da manutenção ficavam espalhados, sem histórico por máquina e sem base para medir disponibilidade e custo. O TPM centraliza o cadastro de máquinas, as ordens preventivas e corretivas e as rotinas automáticas, e o módulo POM analisa as corretivas recorrentes para abrir chamados preventivos antes da próxima falha.",
+    "comoUsa": [
+      "O operador abre o chamado pelo sistema, pelo QR Code da máquina ou pelo tablet",
+      "O planejador converte a solicitação em ordem de manutenção ou a devolve com motivo",
+      "O técnico executa, lança as peças usadas e conclui com o diagnóstico",
+      "Diariamente, o sistema abre preventivas e inspeções para falhas recorrentes",
+      "O gestor acompanha disponibilidade, horas paradas, custos e metas por máquina"
+    ],
+    "funcionalidades": [
+      "Cadastro de máquinas com checklists, manuais e QR Code",
+      "Ordens corretivas, preventivas e de inspeção com fila e Kanban",
+      "Previsão de falhas recorrentes (POM)",
+      "Registro de paradas de produção",
+      "Painel com 8 indicadores e relatório de custo por máquina",
+      "Integração com o app de tablet da máquina"
+    ],
+    "usuarios": "Operadores, técnicos, planejadores e gestores de manutenção.",
+    "impacto": "Cerca de 95% concluído e em treinamento com os usuários, com relatórios de produtividade, tempo ocioso e tempo trabalhado.",
+    "stack": [
+      "React 18",
+      "TypeScript",
+      "Vite 7",
+      "Tailwind CSS",
+      "shadcn/ui (Radix)",
+      "Material UI (legado)",
+      "React Router 6",
+      "Recharts",
+      "react-hook-form + zod",
+      "Supabase self-hosted (Postgres, RLS, RPCs, Storage)",
+      "pg_cron + pg_trgm",
+      "jsPDF / ExcelJS",
+      "Vitest + Testing Library",
+      "Docker + nginx (blue-green)",
+      "SSO Flexibase (spa-bridge)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "codev",
+    "commits": {
+      "meus": 252,
+      "total": 512
+    },
+    "inicio": "2026-01-29",
+    "ultimaAtividade": "2026-10-30",
+    "prints": [
+      {
+        "src": "midia/TPM/01-dashboard.webp",
+        "legenda": "Dashboard com os indicadores da manutenção e os pontos de atenção"
+      },
+      {
+        "src": "midia/TPM/02-maquinario-ficha.webp",
+        "legenda": "Ficha da máquina com dados, documentos e resumo do ativo"
+      },
+      {
+        "src": "midia/TPM/03-rotinas-checklists.webp",
+        "legenda": "Rotinas da máquina: limpeza diária no tablet e checklist da preventiva"
+      },
+      {
+        "src": "midia/TPM/04-ordens-kanban.webp",
+        "legenda": "Kanban das ordens por status: na fila, em execução, em espera e aguardando compra"
+      },
+      {
+        "src": "midia/TPM/05-ordem-fluxo.webp",
+        "legenda": "Página da ordem: chamado recebido, diagnóstico e histórico da máquina"
+      },
+      {
+        "src": "midia/TPM/06-pom-padrao.webp",
+        "legenda": "POM: 5 corretivas a cada ~28 dias geram a OS de inspeção antes da próxima falha"
+      },
+      {
+        "src": "midia/TPM/07-pom-historico.webp",
+        "legenda": "Histórico que justifica o POM: as corretivas recorrentes do motor da serra"
+      },
+      {
+        "src": "midia/TPM/08-relatorio.webp",
+        "legenda": "Relatório por maquinário: horas produtivas, ociosas e custos do mês"
+      }
+    ],
+    "video": "midia/TPM/video.mp4",
+    "poster": "midia/TPM/poster.jpg"
+  },
+  {
+    "repo": "PC",
+    "nome": "Portal de Chamados",
+    "sigla": "PC",
+    "categoria": "Corporativo",
+    "resumo": "Abertura, roteamento e atendimento de chamados entre departamentos, com formulários por área, prazos de SLA e indicadores.",
+    "problema": "Pedidos entre setores como TI, Manutenção, Compras, RH e Qualidade precisavam de um canal único e rastreável, com responsável, prazo e histórico. O portal centraliza esses pedidos com formulário próprio por área, mede primeira resposta e resolução em horário útil e dá a cada setor um painel do que recebe.",
+    "comoUsa": [
+      "Entra com o login corporativo",
+      "Escolhe o departamento de destino e preenche o formulário daquela área",
+      "Acompanha seus chamados e recebe notificações no portal, no Windows e por e-mail",
+      "A área receptora assume, responde ou encaminha o chamado",
+      "Gestores autorizam chamados e acompanham os indicadores de SLA",
+      "Administradores configuram formulários, SLA, feriados e permissões"
+    ],
+    "funcionalidades": [
+      "Formulários por departamento com editor de arrastar e soltar",
+      "Fila por área com responsável, status, prioridade e encaminhamento",
+      "SLA em minutos úteis considerando feriados e ausências",
+      "Painel com estatísticas, calendário de lead time e indicadores",
+      "Notificações em tempo real, push e e-mail",
+      "Integração para outros sistemas abrirem e consultarem chamados"
+    ],
+    "usuarios": "Todos os colaboradores que abrem chamados e as equipes que atendem, como TI, Sistemas, Manutenção, Compras, Qualidade e RH.",
+    "impacto": null,
+    "stack": [
+      "React 18",
+      "TypeScript",
+      "Vite",
+      "Material UI v7",
+      "Tailwind CSS v4",
+      "React Router v6",
+      "Recharts",
+      "React Hook Form + Zod",
+      "@dnd-kit",
+      "Node.js 22",
+      "Express",
+      "Supabase (PostgreSQL, Auth, Storage)",
+      "web-push",
+      "Nodemailer",
+      "SSO OIDC (bridge)",
+      "Docker / GHCR"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "contribui",
+    "commits": {
+      "meus": 1,
+      "total": 513
+    },
+    "inicio": "2026-01-30",
+    "ultimaAtividade": "2026-10-30",
+    "prints": [
+      {
+        "src": "midia/PC/01-dashboard.webp",
+        "legenda": "Dashboard: chamados criados, concluídos, tempo médio em horas úteis e áreas mais acionadas"
+      },
+      {
+        "src": "midia/PC/02-destino.webp",
+        "legenda": "Abertura de chamado: escolha do departamento por área da fábrica"
+      },
+      {
+        "src": "midia/PC/03-formulario.webp",
+        "legenda": "Formulário da Manutenção: máquina, setor e pergunta que só aparece se a máquina parou"
+      },
+      {
+        "src": "midia/PC/04-fila.webp",
+        "legenda": "Fila de chamados em quadro por status, com solicitante e responsável"
+      },
+      {
+        "src": "midia/PC/05-detalhe-sla.webp",
+        "legenda": "Chamado em atendimento: SLA de resposta e resolução em minutos úteis"
+      },
+      {
+        "src": "midia/PC/06-sla.webp",
+        "legenda": "Indicadores de SLA da Manutenção: prazo cumprido, evolução semanal e ranking"
+      }
+    ],
+    "video": "midia/PC/video.mp4",
+    "poster": "midia/PC/poster.jpg"
+  },
+  {
+    "repo": "SGE",
+    "nome": "Sistema de Gestão de Energia",
+    "sigla": "SGE",
+    "categoria": "Qualidade",
+    "resumo": "Lançamento mensal de consumo, produção solar e custo de energia, com metas anuais de redução e acompanhamento do Selo Verde.",
+    "problema": "Acompanhar o consumo de energia e as metas de redução exigidas para o Selo Verde dependia de controles avulsos. O SGE centraliza os lançamentos mensais, compara com a meta anual sobre um ano-base e mostra se a empresa está em conformidade.",
+    "comoUsa": [
+      "Entra com o login corporativo",
+      "Vê no painel consumo, produção solar, custo e progresso da meta",
+      "Lança o mês com consumo, produção, custo e observações",
+      "Define a meta anual de redução sobre um ano-base",
+      "Gera relatórios por período e exporta em PDF"
+    ],
+    "funcionalidades": [
+      "Lançamentos mensais de consumo, produção solar e custo",
+      "Metas anuais com status do Selo Verde",
+      "Painel com indicadores e gráficos",
+      "Relatórios por período em PDF",
+      "Campos personalizados de lançamento",
+      "Perfis de acesso e ativação de usuários"
+    ],
+    "usuarios": "Responsáveis pela gestão de energia e sustentabilidade.",
+    "impacto": null,
+    "stack": [
+      "Next.js 16 (App Router, standalone)",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 3",
+      "shadcn/ui (Radix)",
+      "TanStack Query",
+      "TanStack Table",
+      "Recharts",
+      "jsPDF",
+      "html2canvas",
+      "Zod",
+      "Supabase (Postgres + RLS)",
+      "SSO Flexibase (bridge sidecar)",
+      "Docker",
+      "GitHub Actions (blue-green)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 38
+    },
+    "inicio": "2026-03-05",
+    "ultimaAtividade": "2026-07-28",
+    "prints": [
+      {
+        "src": "midia/SGE/01-dashboard.webp",
+        "legenda": "Dashboard de energia com consumo, geração solar e custo do ano"
+      },
+      {
+        "src": "midia/SGE/02-lancamentos.webp",
+        "legenda": "Lançamentos mensais de consumo, geração solar e valor da conta"
+      },
+      {
+        "src": "midia/SGE/03-novo-lancamento.webp",
+        "legenda": "Novo lançamento do mês com consumo, geração solar e valor"
+      },
+      {
+        "src": "midia/SGE/04-metas.webp",
+        "legenda": "Metas anuais de redução do consumo com o realizado de cada ano"
+      },
+      {
+        "src": "midia/SGE/05-relatorios.webp",
+        "legenda": "Relatórios com gráficos mensais de consumo e geração solar"
+      }
+    ],
+    "video": "midia/SGE/video.mp4",
+    "poster": "midia/SGE/poster.jpg"
+  },
+  {
+    "repo": "PDP",
+    "nome": "Soluções Focco: Pedidos e Margem Bruta",
+    "sigla": "PDP",
+    "categoria": "Produção",
+    "resumo": "Consulta pedidos de venda no ERP, classifica itens por área de produção e analisa vendas de sofás e margem bruta.",
+    "problema": "A leitura do código de cada item de pedido e a separação por área de produção, como Metalurgia, Marcenaria e Tapeçaria, eram feitas manualmente. O sistema busca o pedido no ERP, interpreta o item, classifica automaticamente e acompanha o status de produção; depois ganhou análises de vendas de sofás e de margem bruta por lote.",
+    "comoUsa": [
+      "Escolhe o módulo no menu lateral",
+      "Digita o número do pedido, e o sistema traz e classifica os itens",
+      "Navega pelos itens de cada área e atualiza o status de produção",
+      "Na análise de sofás, informa vários pedidos e vê o resumo mensal",
+      "Na margem bruta, importa um lote de pedidos, classifica os itens e informa custos"
+    ],
+    "funcionalidades": [
+      "Busca de pedidos direto no ERP",
+      "Classificação automática de itens por área de produção",
+      "Leitura da estrutura de cada item",
+      "Status de produção por pedido e por item",
+      "Análise mensal de vendas de sofás",
+      "Margem bruta por lote com diagnóstico de confiabilidade dos dados"
+    ],
+    "usuarios": "Equipes de planejamento e produção que acompanham pedidos e áreas comercial e de gestão que analisam vendas.",
+    "impacto": null,
+    "stack": [
+      "Next.js 16 (App Router)",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "componentes estilo shadcn (CVA)",
+      "Recharts",
+      "Supabase (PostgreSQL)",
+      "API REST Focco ERP",
+      "pdf-parse / pdf2json / pdf-to-img",
+      "Tesseract.js",
+      "Ollama (opcional)",
+      "Python (script de extração CCP)"
+    ],
+    "status": "não informado",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 11
+    },
+    "inicio": "2026-03-12",
+    "ultimaAtividade": "2026-06-23",
+    "prints": [
+      {
+        "src": "midia/PDP/01-pedidos-recentes.webp",
+        "legenda": "Consulta de pedidos com a lista dos últimos consultados e o status de produção"
+      },
+      {
+        "src": "midia/PDP/02-pedido-detalhe.webp",
+        "legenda": "Detalhe do pedido: dados do ERP, status de produção e itens por área"
+      },
+      {
+        "src": "midia/PDP/03-pedido-mascara.webp",
+        "legenda": "Item expandido: máscara do produto com revestimento, cor, pé e largura"
+      },
+      {
+        "src": "midia/PDP/04-analise-sofas.webp",
+        "legenda": "Análise de Sofás: itens marcados como sofá e o resumo mensal"
+      },
+      {
+        "src": "midia/PDP/05-margem-indicadores.webp",
+        "legenda": "Margem Bruta: receita, custo e margem do lote com vendas por mês"
+      },
+      {
+        "src": "midia/PDP/06-margem-por-linha.webp",
+        "legenda": "Margem por tipo de venda e por linha de produto"
+      }
+    ],
+    "video": "midia/PDP/video.mp4",
+    "poster": "midia/PDP/poster.jpg"
+  },
+  {
+    "repo": "LICITA",
+    "nome": "Inteligência de Licitações (v1)",
+    "sigla": "LICITA",
+    "categoria": "Comercial",
+    "resumo": "Primeira versão da plataforma para buscar, analisar com IA e acompanhar em funil os editais de compras públicas.",
+    "problema": "A equipe comercial precisava encontrar editais de interesse no Portal Nacional de Contratações Públicas, ler documentos extensos e decidir em quais licitações participar. A primeira versão trouxe busca salva, análise por IA de resumo, riscos e documentos exigidos e um funil de acompanhamento; depois foi substituída pelo LICITA 2.",
+    "comoUsa": [
+      "Entra com o login corporativo e acessa a busca",
+      "Pesquisa editais por texto, estado, município, modalidade e situação",
+      "Abre o edital para ver itens, anexos e histórico",
+      "Pede à IA resumo, riscos, preços e documentos exigidos",
+      "Salva favoritos com notas e responsáveis",
+      "Move o edital pelas etapas do funil"
+    ],
+    "funcionalidades": [
+      "Busca de editais com múltiplos filtros",
+      "Detalhe com itens, anexos e histórico",
+      "Análise de editais por IA local",
+      "Chat com IA sobre o conteúdo do edital",
+      "Funil com etapas, checklists e alertas",
+      "Favoritos com notas, responsáveis e rastreio de atualizações"
+    ],
+    "usuarios": "Equipe comercial e de licitações.",
+    "impacto": null,
+    "stack": [
+      "Next.js 15 (App Router)",
+      "React 19",
+      "MUI v6",
+      "TanStack Query",
+      "NestJS 11",
+      "Prisma",
+      "PostgreSQL/Supabase + pgvector",
+      "Redis + BullMQ",
+      "Ollama (qwen2.5:7b, qwen3-embedding)",
+      "npm + Turborepo",
+      "Vitest",
+      "Docker"
+    ],
+    "status": "descontinuado",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 80
+    },
+    "inicio": "2026-03-18",
+    "ultimaAtividade": "2026-07-20",
+    "prints": [
+      {
+        "src": "midia/LICITA/01-busca.webp",
+        "legenda": "Busca de editais por termo, UF, município, modalidade e status"
+      },
+      {
+        "src": "midia/LICITA/02-edital.webp",
+        "legenda": "Detalhe do edital com etapa atual no funil e dados do órgão"
+      },
+      {
+        "src": "midia/LICITA/03-funil.webp",
+        "legenda": "Funil de licitações com taxas de análise, aprovação e venda e gargalos por etapa"
+      },
+      {
+        "src": "midia/LICITA/04-etapa.webp",
+        "legenda": "Etapa do funil com os editais em análise e o último comentário"
+      }
+    ],
+    "video": "midia/LICITA/video.mp4",
+    "poster": "midia/LICITA/poster.jpg"
+  },
+  {
+    "repo": "HUB",
+    "nome": "Portal Corporativo",
+    "sigla": "HUB",
+    "categoria": "Corporativo",
+    "resumo": "Portal interno com links dos sistemas, banners, notícias, documentos e lista de ramais, gerenciado por painel administrativo.",
+    "problema": "Com sistemas espalhados em endereços diferentes, os colaboradores precisavam de um ponto único para encontrar ferramentas, comunicados, documentos e ramais. O HUB centraliza esse conteúdo sem exigir login para consulta e mede o que é efetivamente acessado.",
+    "comoUsa": [
+      "Abre o portal e vê os sistemas agrupados por categoria",
+      "Clica no sistema desejado e faz login nele",
+      "Lê notícias e baixa documentos liberados",
+      "Pesquisa ramais por nome ou setor",
+      "O administrador cadastra sistemas, banners, notícias, documentos e ramais e acompanha os acessos"
+    ],
+    "funcionalidades": [
+      "Página inicial com sistemas, banner, notícias e documentos",
+      "Lista de ramais pesquisável",
+      "Painel administrativo de conteúdo e usuários",
+      "Documentos restritos por permissão",
+      "Estatísticas de acesso que preservam a privacidade",
+      "Tema claro e escuro"
+    ],
+    "usuarios": "Todos os colaboradores; administradores de TI e comunicação no painel.",
+    "impacto": null,
+    "stack": [
+      "Next.js 16 (App Router)",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "componentes estilo shadcn/Radix",
+      "Recharts",
+      "Supabase (Auth, PostgreSQL, Storage, RLS)",
+      "Vitest",
+      "Testing Library",
+      "Playwright",
+      "Docker + GHCR"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 32
+    },
+    "inicio": "2026-03-27",
+    "ultimaAtividade": "2026-06-25",
+    "prints": [
+      {
+        "src": "midia/HUB/01-home.webp",
+        "legenda": "Home do HUB: banner institucional, sistemas por categoria, comunicados e documentos públicos"
+      },
+      {
+        "src": "midia/HUB/02-ramais.webp",
+        "legenda": "Lista de ramais com busca por setor ou atendente"
+      },
+      {
+        "src": "midia/HUB/03-busca.webp",
+        "legenda": "Busca global do HUB encontrando sistemas e documentos"
+      },
+      {
+        "src": "midia/HUB/04-comunicados.webp",
+        "legenda": "Comunicados ativos da empresa, classificados por prioridade"
+      },
+      {
+        "src": "midia/HUB/05-sistemas.webp",
+        "legenda": "Catálogo de sistemas internos agrupados por categoria, com status"
+      },
+      {
+        "src": "midia/HUB/06-documentos.webp",
+        "legenda": "Documentos públicos (manuais, políticas e procedimentos) para download"
+      }
+    ],
+    "video": "midia/HUB/video.mp4",
+    "poster": "midia/HUB/poster.jpg"
+  },
+  {
+    "repo": "SSO",
+    "nome": "Portal de Login Único",
+    "sigla": "SSO",
+    "categoria": "TI/Infra",
+    "resumo": "Provedor central de identidade que autentica, autoriza e audita o acesso a todos os sistemas internos.",
+    "problema": "Cada sistema interno tinha login, sessão e cadastro próprios, o que espalhava usuários e tornava inconsistente bloquear ou desligar uma pessoa. O Portal SSO centraliza autenticação, verificação em duas etapas, auditoria e permissão por app, para que criar, bloquear ou desligar alguém seja feito num só lugar.",
+    "comoUsa": [
+      "Abre qualquer sistema interno e é levado à tela de login única",
+      "Informa usuário e senha; perfis administrativos confirmam com código de verificação",
+      "No primeiro acesso, lê e confirma os objetivos estratégicos do ciclo",
+      "O portal verifica se a pessoa tem acesso àquele app e a devolve já autenticada",
+      "Se esquecer a senha, recebe um link por e-mail ou pede ajuda pelo Portal de Chamados",
+      "Administradores convidam usuários, liberam apps e consultam a auditoria"
+    ],
+    "funcionalidades": [
+      "Login único no padrão OpenID Connect, com saída global",
+      "Verificação em duas etapas para administradores",
+      "Controle central de acesso por aplicação",
+      "Console de usuários: convites, desativação e redefinição de senha",
+      "Catálogo de aplicações com teste de integração",
+      "Auditoria de eventos de identidade e acesso"
+    ],
+    "usuarios": "Todos os colaboradores no login; equipe de TI no console de acessos.",
+    "impacto": "17 sistemas no programa de login único, entre eles SGI, PMC, TPM, SCV, Portal de Chamados e SGE.",
+    "stack": [
+      "TypeScript",
+      "Node.js 22",
+      "Fastify 5",
+      "Next.js 15 (App Router)",
+      "React 19",
+      "Tailwind CSS 4",
+      "shadcn/ui",
+      "Recharts",
+      "Zod",
+      "jose (JWT/JWKS)",
+      "Nodemailer",
+      "Supabase Auth + PostgREST",
+      "PostgreSQL",
+      "Vitest",
+      "pnpm workspaces + Turborepo",
+      "Docker",
+      "NGINX"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "contribui",
+    "commits": {
+      "meus": 1,
+      "total": 317
+    },
+    "inicio": "2026-03-29",
+    "ultimaAtividade": "2026-10-29",
+    "prints": [
+      {
+        "src": "midia/SSO/01-login.webp",
+        "legenda": "Login de conta única: um acesso para todos os sistemas do grupo"
+      },
+      {
+        "src": "midia/SSO/02-dashboard.webp",
+        "legenda": "Dashboard do SSO: logins por dia, pontos de atenção e uso dos sistemas"
+      },
+      {
+        "src": "midia/SSO/03-usuarios.webp",
+        "legenda": "Gestão de usuários com status, MFA, último acesso e sistemas liberados"
+      },
+      {
+        "src": "midia/SSO/04-permissoes.webp",
+        "legenda": "Liberação de sistemas por usuário: um clique concede ou revoga o acesso"
+      },
+      {
+        "src": "midia/SSO/05-mfa.webp",
+        "legenda": "Exigir MFA (TOTP) no login: as sessões abertas da pessoa são encerradas"
+      },
+      {
+        "src": "midia/SSO/06-auditoria.webp",
+        "legenda": "Trilha de auditoria filtrável: logins, acessos a apps, bloqueios e ações de admin"
+      }
+    ],
+    "video": "midia/SSO/video.mp4",
+    "poster": "midia/SSO/poster.jpg"
+  },
+  {
+    "repo": "PMC",
+    "nome": "Gestão de Projetos de Melhoria Contínua",
+    "sigla": "PMC",
+    "categoria": "Corporativo",
+    "resumo": "Substitui a planilha do Plano de Melhoria Contínua, gerindo projetos com 5W2H, A3, aprovações e objetivos estratégicos.",
+    "problema": "O cronograma do Plano de Melhoria Contínua vivia numa planilha Excel, sem edição simultânea, aprovação formal, trilha de auditoria nem visão por responsável. O PMC importou os projetos da planilha e passou a tratar cadastro, 5W2H, atividades, prazos e aprovações num fluxo controlado por papéis, com painéis para a liderança.",
+    "comoUsa": [
+      "Entra com o login corporativo ou solicita acesso",
+      "Acompanha no painel indicadores, fila crítica e aprovações pendentes",
+      "Consulta seus projetos, atividades e prazos no calendário",
+      "Cadastra projetos em 3 etapas: triagem, 5W2H e governança",
+      "Organiza o A3 de atividades, anexa comprovações e faz as entregas",
+      "Gestores aprovam entregas, e a diretoria vincula projetos aos objetivos estratégicos"
+    ],
+    "funcionalidades": [
+      "Painel executivo com indicadores e fila crítica",
+      "Cadastro em 3 etapas com classificação automática",
+      "5W2H e A3 de atividades com arrastar e soltar",
+      "Aprovação de entregas em lote e automática após 24 horas",
+      "Objetivos estratégicos e macroprojetos com progresso ponderado",
+      "6 níveis de acesso, de colaborador a administrador"
+    ],
+    "usuarios": "Diretoria, gestores, gerentes, encarregados e colaboradores de todas as áreas.",
+    "impacto": "60 projetos migrados da planilha, com 540 checkpoints mensais, validados em produção.",
+    "stack": [
+      "React 19",
+      "Vite 6",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui (Design System Graphite Executive)",
+      "SheetJS (xlsx)",
+      "Supabase (PostgreSQL 15, Auth, Storage, Edge Functions Deno, pg_cron)",
+      "Node.js (auth-bridge de dev)",
+      "pnpm workspaces + Turborepo",
+      "Docker + NGINX"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "contribui",
+    "commits": {
+      "meus": 3,
+      "total": 70
+    },
+    "inicio": "2026-04-27",
+    "ultimaAtividade": "2026-10-30",
+    "prints": [
+      {
+        "src": "midia/PMC/01-dashboard.webp",
+        "legenda": "Dashboard do PMC com KPIs do portfólio de projetos de melhoria"
+      },
+      {
+        "src": "midia/PMC/02-projetos.webp",
+        "legenda": "Lista de projetos de melhoria contínua com status, prioridade e prazo"
+      },
+      {
+        "src": "midia/PMC/03-projeto-a3.webp",
+        "legenda": "A3 do projeto: atividades por grupo com responsável, prazo, entrega e status"
+      },
+      {
+        "src": "midia/PMC/04-projeto-5w2h.webp",
+        "legenda": "Plano 5W2H estruturado do projeto de redução de setup"
+      },
+      {
+        "src": "midia/PMC/05-aprovacoes.webp",
+        "legenda": "Fila de aprovação de entregas com prazo e contagem para aprovação automática"
+      },
+      {
+        "src": "midia/PMC/06-calendario.webp",
+        "legenda": "Calendário mensal com os prazos das atividades de todos os projetos"
+      },
+      {
+        "src": "midia/PMC/07-objetivos-estrategicos.webp",
+        "legenda": "Objetivos estratégicos do ciclo com score de alinhamento e progresso"
+      }
+    ],
+    "video": "midia/PMC/video.mp4",
+    "poster": "midia/PMC/poster.jpg"
+  },
+  {
+    "repo": "FoccoAPI",
+    "nome": "Plataforma de Dados do ERP",
+    "sigla": "FoccoAPI",
+    "categoria": "TI/Infra",
+    "resumo": "Camada de dados somente leitura sobre o ERP, que entrega vendas, financeiro, produção e estoque aos demais sistemas internos.",
+    "problema": "Vários sistemas internos precisavam de dados do ERP, e acessar o banco do ERP diretamente em cada um seria arriscado e inconsistente. A FoccoAPI funciona como fachada única e somente leitura, com contratos estáveis para sistemas e agentes de IA, consultas controladas e documentação interativa.",
+    "comoUsa": [
+      "Sistemas internos consultam os dados com chaves de acesso de escopo próprio",
+      "Agentes de IA consultam as mesmas informações por um canal dedicado",
+      "Administradores entram com o login corporativo no painel da plataforma",
+      "Exploram e testam as rotas na documentação interativa",
+      "Fazem perguntas em linguagem natural ao chat de IA",
+      "Analisam a rentabilidade de vendas por produto e período"
+    ],
+    "funcionalidades": [
+      "Cerca de 225 rotas de dados: produtos, clientes, pedidos, notas, estoque, produção, compras e financeiro",
+      "Contratos versionados com verificação automática de compatibilidade",
+      "Análises mensais prontas para o sistema de indicadores",
+      "Acesso para agentes de IA e chat em linguagem natural",
+      "Página de rentabilidade de vendas",
+      "Chaves de acesso com permissões por recurso"
+    ],
+    "usuarios": "Sistemas internos como DASH, SGQ, SGI e PDP, além de administradores de TI.",
+    "impacto": "Verificação de saúde com 85 checagens sem falhas, cerca de 225 rotas sem remoções e análises de 12 meses respondendo em cerca de 1,1 s.",
+    "stack": [
+      "Node.js 24",
+      "TypeScript",
+      "Fastify 5",
+      "oracledb (Oracle, usuário somente leitura)",
+      "Zod",
+      "OpenAPI + Swagger UI",
+      "Model Context Protocol SDK",
+      "Ollama",
+      "Vitest",
+      "Docker (distroless) + GHCR",
+      "Trivy"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "api",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 140
+    },
+    "inicio": "2026-05-26",
+    "ultimaAtividade": "2026-10-29",
+    "prints": [
+      {
+        "src": "midia/FoccoAPI/01-swagger-visao-geral.webp",
+        "legenda": "Swagger da foccoAPI: API REST interna e read-only sobre o ERP"
+      },
+      {
+        "src": "midia/FoccoAPI/02-pedido-funil.webp",
+        "legenda": "Endpoint do funil do pedido: parâmetros, escopo e respostas documentadas"
+      },
+      {
+        "src": "midia/FoccoAPI/03-produtos-estrutura.webp",
+        "legenda": "Endpoints de produtos, máscaras e explosão de estrutura (BOM)"
+      },
+      {
+        "src": "midia/FoccoAPI/04-analise-margem-linha.webp",
+        "legenda": "Análises gerenciais: margem bruta por linha de produto"
+      }
+    ],
+    "video": "midia/FoccoAPI/video.mp4",
+    "poster": "midia/FoccoAPI/poster.jpg"
+  },
+  {
+    "repo": "MKTMAIL",
+    "nome": "Gerador de Assinatura de E-mail",
+    "sigla": "MKTMAIL",
+    "categoria": "Marketing",
+    "resumo": "O colaborador preenche seus dados e baixa a assinatura de e-mail no layout oficial da empresa.",
+    "problema": "Criar ou alterar a assinatura de e-mail dependia de um pedido manual ao Marketing. Como layout, fontes, cores e redes sociais são padronizados, o processo foi automatizado para dar autonomia ao colaborador e garantir assinaturas sempre no padrão aprovado.",
+    "comoUsa": [
+      "Entra com o login corporativo",
+      "Preenche nome, cargo, e-mail corporativo, telefone e WhatsApp",
+      "Confere a prévia no layout aprovado pelo Marketing",
+      "Baixa a imagem e configura no seu programa de e-mail",
+      "Na próxima visita, encontra os dados já preenchidos"
+    ],
+    "funcionalidades": [
+      "Formulário com validação de nome, e-mail corporativo e telefones",
+      "Prévia fiel ao layout oficial",
+      "Redes sociais fixas, sem edição",
+      "Exportação em imagem de alta resolução",
+      "Dados guardados apenas no navegador"
+    ],
+    "usuarios": "Todos os colaboradores com e-mail corporativo; o Marketing define o layout.",
+    "impacto": "Acaba com o pedido manual ao Marketing para criar ou alterar assinaturas de e-mail.",
+    "stack": [
+      "React 18",
+      "Vite",
+      "TypeScript (strict)",
+      "Tailwind CSS",
+      "shadcn/ui (Radix)",
+      "React Hook Form",
+      "Zod",
+      "html-to-image",
+      "SSO Flexibase (spa-bridge)",
+      "nginx",
+      "Docker",
+      "GitHub Actions (blue-green)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 14
+    },
+    "inicio": "2026-06-01",
+    "ultimaAtividade": "2026-06-25",
+    "prints": [
+      {
+        "src": "midia/MKTMAIL/01-validacao-email.webp",
+        "legenda": "Validação do formulário: só e-mail corporativo é aceito e o download fica bloqueado"
+      },
+      {
+        "src": "midia/MKTMAIL/02-rodape-preenchido.webp",
+        "legenda": "Dados do colaborador e prévia do rodapé no padrão visual da marca"
+      },
+      {
+        "src": "midia/MKTMAIL/03-png-gerado.webp",
+        "legenda": "PNG gerado e baixado em 1920x640, pronto para configurar no cliente de e-mail"
+      },
+      {
+        "src": "midia/MKTMAIL/04-png-exportado.webp",
+        "legenda": "Rodapé exportado (PNG 1920x640) com logo, contatos e redes sociais fixas"
+      }
+    ],
+    "video": "midia/MKTMAIL/video.mp4",
+    "poster": "midia/MKTMAIL/poster.jpg"
+  },
+  {
+    "repo": "DASH",
+    "nome": "Dashboards Gerenciais",
+    "sigla": "DASH",
+    "categoria": "Financeiro",
+    "resumo": "Plataforma de dashboards por cargo; o primeiro módulo é financeiro, alimentado pelo ERP, com cada número rastreável até a origem.",
+    "problema": "A gestão precisava de indicadores financeiros do ERP em que pudesse confiar, mas divergências entre relatórios e o sistema de origem minavam essa confiança. O DASH foi desenhado para que cada valor possa ser aberto até o lançamento original no ERP, com reconciliação mensal e certificação dos indicadores.",
+    "comoUsa": [
+      "Entra com o login corporativo e vê só os dashboards liberados para seu cargo",
+      "Abre o Dashboard Financeiro e escolhe período e modo",
+      "Navega por resultado de caixa, rentabilidade por produto e eficiência operacional",
+      "Clica em qualquer card ou célula para ver a composição até o documento de origem",
+      "Certifica indicadores, registra comentários e consulta DRE e alertas de risco"
+    ],
+    "funcionalidades": [
+      "Catálogo de dashboards com acesso por cargo",
+      "Resultado de caixa, rentabilidade e eficiência operacional",
+      "Modo auditoria com detalhamento até o registro original",
+      "Reconciliação mensal com o ERP",
+      "Certificação, histórico e comentários por indicador",
+      "DRE por competência e por caixa, balanço e alertas de risco"
+    ],
+    "usuarios": "Diretoria e gestão financeira, com acesso definido por cargo.",
+    "impacto": null,
+    "stack": [
+      "React 19",
+      "Vite 6",
+      "React Router 7",
+      "TanStack Query/Table",
+      "Recharts",
+      "shadcn/ui + Radix",
+      "Tailwind CSS",
+      "Supabase (PostgreSQL, RLS, Edge Functions/Deno)",
+      "Node (auth-bridge SSO)",
+      "FoccoAPI",
+      "pnpm + Turborepo",
+      "Docker/nginx"
+    ],
+    "status": "em desenvolvimento",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 32
+    },
+    "inicio": "2026-06-11",
+    "ultimaAtividade": "2026-08-19",
+    "prints": [
+      {
+        "src": "midia/DASH/01-resultado-caixa.webp",
+        "legenda": "Dashboard Financeiro: receita, despesa e resultado de caixa com comparativo"
+      },
+      {
+        "src": "midia/DASH/02-graficos-caixa.webp",
+        "legenda": "Matriz mensal e gráficos de receita, despesa e resultado por mês"
+      },
+      {
+        "src": "midia/DASH/03-drilldown-despesa.webp",
+        "legenda": "Composição auditável da despesa: total do card, recálculo, status e queries"
+      },
+      {
+        "src": "midia/DASH/04-drilldown-categorias.webp",
+        "legenda": "Despesa por categoria com valor, participação e número de registros"
+      },
+      {
+        "src": "midia/DASH/05-rentabilidade.webp",
+        "legenda": "Rentabilidade por produto: margem bruta e ranking das linhas de mobiliário"
+      },
+      {
+        "src": "midia/DASH/06-alertas.webp",
+        "legenda": "Painel de alertas de risco financeiro após a varredura do mês"
+      }
+    ],
+    "video": "midia/DASH/video.mp4",
+    "poster": "midia/DASH/poster.jpg"
+  },
+  {
+    "repo": "flexibase-ci",
+    "nome": "Notificação e Revisão Automática de Código",
+    "sigla": "flexibase-ci",
+    "categoria": "TI/Infra",
+    "resumo": "Automações compartilhadas que avisam a equipe de cada pull request e fazem uma primeira revisão de código por IA.",
+    "problema": "Com dezenas de projetos de código, a equipe precisava saber de cada alteração proposta sem vigiar o GitHub e ter uma primeira revisão consistente. As automações ficam centralizadas num só lugar, e cada projeto apenas referencia o fluxo comum, instalado em massa por scripts.",
+    "comoUsa": [
+      "Um administrador instala o fluxo comum em todos os projetos de uma vez",
+      "Ao abrir um pull request, a equipe recebe um resumo no Discord",
+      "Quando o pull request fica pronto, a IA revisa as mudanças e comenta os achados por prioridade",
+      "Qualquer membro pode pedir nova revisão com um comentário",
+      "Cada projeto pode desligar a revisão automática se precisar"
+    ],
+    "funcionalidades": [
+      "Notificação de pull requests no Discord",
+      "Revisão de código por IA, consultiva, sem bloquear a entrega",
+      "Critérios alinhados às regras da plataforma: login único, dados pessoais e publicação",
+      "Comentários diretamente nas linhas alteradas",
+      "Exclusão de arquivos gerados e limite de tamanho",
+      "Scripts de distribuição em massa"
+    ],
+    "usuarios": "Desenvolvedores e revisores de todos os projetos da organização.",
+    "impacto": null,
+    "stack": [
+      "GitHub Actions (workflow_call)",
+      "Bash",
+      "jq",
+      "GitHub CLI",
+      "Anthropic Messages API",
+      "Python (requests)",
+      "Discord webhooks"
+    ],
+    "status": "em produção",
+    "temUI": false,
+    "tipo": "infra/docs",
+    "papel": "contribui",
+    "commits": {
+      "meus": 1,
+      "total": 13
+    },
+    "inicio": "2026-06-15",
+    "ultimaAtividade": "2026-10-29",
+    "prints": [],
+    "video": null,
+    "poster": null
+  },
+  {
+    "repo": "GDR",
+    "nome": "Gerenciamento de Rotina do Diretor",
+    "sigla": "GDR",
+    "categoria": "Corporativo",
+    "resumo": "Agenda executiva da diretoria, operada pela secretaria, com pendências, atas, follow-ups, indicadores externos e assistente de IA.",
+    "problema": "A rotina da diretoria, com reuniões, participantes, preparativos, pendências e atas, precisava ser organizada pela secretaria executiva num lugar único. O GDR reúne agenda, aprovações, atas e acompanhamento de decisões, que antes ficavam dispersos ou sem registro estruturado.",
+    "comoUsa": [
+      "Entra com o login corporativo e vê a Central do Dia com o próximo compromisso e as pendências",
+      "A secretaria cria compromissos com participantes e checklist por pessoa",
+      "O sistema bloqueia conflitos de horário e envia lembretes antes da reunião",
+      "Após a reunião, a ata é anexada e pode ser compartilhada por código",
+      "O diretor aprova, adia ou delega pendências e acompanha decisões",
+      "Consulta câmbio, indicadores econômicos e licitações do setor, ou pede ações à assistente de IA"
+    ],
+    "funcionalidades": [
+      "Agenda mensal, semanal e em lista com detecção de conflitos",
+      "Checklist operacional por participante",
+      "Pendências e aprovações agrupadas por prazo",
+      "Atas com visualizador e compartilhamento por código",
+      "Panorama com câmbio, indicadores econômicos e licitações de mobiliário",
+      "Assistente de IA, notificações e instalação no celular"
+    ],
+    "usuarios": "Diretoria e secretaria executiva.",
+    "impacto": null,
+    "stack": [
+      "React 19",
+      "Vite 6",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui + Radix",
+      "TanStack Query",
+      "Recharts",
+      "Supabase (PostgreSQL, RLS, RPCs, Storage, Edge Functions)",
+      "Node (auth-bridge SSO)",
+      "pnpm + Turborepo",
+      "Vitest",
+      "Docker/nginx"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "contribui",
+    "commits": {
+      "meus": 1,
+      "total": 37
+    },
+    "inicio": "2026-06-16",
+    "ultimaAtividade": "2026-09-25",
+    "prints": [
+      {
+        "src": "midia/GDR/01-central-do-dia.webp",
+        "legenda": "Central do Dia: próximo compromisso, brief do dia e pendências"
+      },
+      {
+        "src": "midia/GDR/02-agenda-semanal.webp",
+        "legenda": "Agenda semanal do diretor com compromissos por categoria"
+      },
+      {
+        "src": "midia/GDR/03-compromisso-detalhe.webp",
+        "legenda": "Detalhe do compromisso com participantes e checklist por pessoa"
+      },
+      {
+        "src": "midia/GDR/04-novo-compromisso.webp",
+        "legenda": "Novo compromisso com categoria, horário, participante e checklist"
+      },
+      {
+        "src": "midia/GDR/05-pendencias.webp",
+        "legenda": "Pendências e aprovações do diretor agrupadas por prazo"
+      },
+      {
+        "src": "midia/GDR/06-dashboard.webp",
+        "legenda": "Dashboard executivo com KPIs, carga dos próximos 14 dias e pendências por área"
+      }
+    ],
+    "video": "midia/GDR/video.mp4",
+    "poster": "midia/GDR/poster.jpg"
+  },
+  {
+    "repo": "ISONLINE",
+    "nome": "Painel de Status da Plataforma",
+    "sigla": "ISONLINE",
+    "categoria": "TI/Infra",
+    "resumo": "Painel público que mostra, a cada 5 minutos, se servidores, serviços e sistemas da empresa estão no ar.",
+    "problema": "Saber se um sistema ou servidor estava no ar exigia ferramentas técnicas restritas à equipe de TI. O ISONLINE consolida esse estado numa página simples, sem login, que qualquer pessoa consulta, exibindo apenas status, tempo de resposta e uso de recursos.",
+    "comoUsa": [
+      "Abre o painel e vê o resumo de itens online, degradados e fora do ar",
+      "Consulta na aba Servidores o uso de disco e memória",
+      "Acompanha os serviços de autenticação, banco de dados e monitoramento",
+      "Vê o status de cada sistema publicado",
+      "Clica num item para ver o histórico do dia em gráfico"
+    ],
+    "funcionalidades": [
+      "Coleta automática a cada 5 minutos",
+      "Métricas de disco, memória e velocidade dos servidores",
+      "Verificação de disponibilidade de cada sistema",
+      "Estados online, degradado, offline e pendente com nota de saúde",
+      "Gráficos de histórico por dia",
+      "Tema claro e escuro"
+    ],
+    "usuarios": "Equipe de TI e qualquer colaborador que queira saber se um sistema está no ar.",
+    "impacto": null,
+    "stack": [
+      "React 19",
+      "Vite 7",
+      "TypeScript",
+      "Node.js (servidor HTTP próprio)",
+      "lucide-react",
+      "Geist Sans/Mono",
+      "Supabase (opcional, histórico)",
+      "Docker",
+      "GitHub Actions (blue-green)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 13
+    },
+    "inicio": "2026-06-25",
+    "ultimaAtividade": "2026-07-02",
+    "prints": [
+      {
+        "src": "midia/ISONLINE/01-servidores.webp",
+        "legenda": "Servidores: status, HealthCheck e histórico de disco, memória e rede"
+      },
+      {
+        "src": "midia/ISONLINE/02-historico.webp",
+        "legenda": "Histórico do dia de um servidor, com estatísticas e coletas recentes"
+      },
+      {
+        "src": "midia/ISONLINE/03-seguranca.webp",
+        "legenda": "Malha de segurança e observabilidade com status e latência"
+      },
+      {
+        "src": "midia/ISONLINE/04-healthcheck.webp",
+        "legenda": "Detalhe do HealthCheck: fatores, motivo do status e ação recomendada"
+      },
+      {
+        "src": "midia/ISONLINE/05-aplicacoes.webp",
+        "legenda": "Aplicações publicadas com status, latência e lista de pendentes"
+      }
+    ],
+    "video": "midia/ISONLINE/video.mp4",
+    "poster": "midia/ISONLINE/poster.jpg"
+  },
+  {
+    "repo": "Flexibase-SSO-iNSTALL",
+    "nome": "Manual de Operação para Assistentes de IA",
+    "sigla": "SSO-iNSTALL",
+    "categoria": "TI/Infra",
+    "resumo": "Instruções que ensinam assistentes de IA a integrar sistemas ao login único, publicá-los e operar a infraestrutura no padrão da empresa.",
+    "problema": "Colocar cada novo sistema atrás do login único e publicá-lo sem interrupção era um conhecimento espalhado entre pessoas e incidentes passados. O pacote transforma esses roteiros e lições aprendidas em instruções versionadas, que qualquer desenvolvedor ou assistente de IA segue passo a passo sem redescobrir as armadilhas.",
+    "comoUsa": [
+      "O desenvolvedor instala o pacote com um instalador de um clique",
+      "Pede ao assistente, por exemplo, que coloque um app atrás do login único ou o migre para a infraestrutura nova",
+      "O assistente carrega o roteiro correspondente e executa cada etapa com validação",
+      "Quem aprende algo novo atualiza o roteiro, e os demais recebem a versão nova ao reinstalar"
+    ],
+    "funcionalidades": [
+      "Roteiro de integração de apps ao login único",
+      "Roteiro de migração para a infraestrutura nova com publicação sem interrupção",
+      "Roteiro de operação dos servidores com regras de segurança",
+      "Versões geradas para diferentes assistentes de IA e editores",
+      "Instaladores para Windows, Linux e macOS",
+      "Registro de incidentes e lições aprendidas"
+    ],
+    "usuarios": "Equipe de desenvolvimento e infraestrutura e os assistentes de IA que ela utiliza.",
+    "impacto": "Roteiro seguido para integrar ao login único e publicar sistemas como SGI, PMC, SCV, PDF, SGE e CDT.",
+    "stack": [
+      "Markdown (skills no formato Claude Code)",
+      "Bash",
+      "PowerShell"
+    ],
+    "status": "em produção",
+    "temUI": false,
+    "tipo": "infra/docs",
+    "papel": "contribui",
+    "commits": {
+      "meus": 6,
+      "total": 8
+    },
+    "inicio": "2026-06-30",
+    "ultimaAtividade": "2026-09-23",
+    "prints": [],
+    "video": null,
+    "poster": null
+  },
+  {
+    "repo": "LICITA2",
+    "nome": "Agregador de Licitações",
+    "sigla": "LICITA 2",
+    "categoria": "Comercial",
+    "resumo": "Cópia local e sincronizada das licitações públicas, com busca instantânea, favoritos e funil compartilhado pela equipe.",
+    "problema": "A consulta oficial de licitações públicas é lenta e paginada, e a equipe tinha dificuldade para encontrar editais de móveis a tempo. A nova versão baixa todo o histórico uma vez, mantém tudo sincronizado e serve a busca, inclusive no texto dos itens, a partir da infraestrutura própria.",
+    "comoUsa": [
+      "Entra com o login corporativo e cai na tela de busca",
+      "Pesquisa termos, inclusive dos itens do edital, e filtra por estado, modalidade e órgão",
+      "Abre a licitação para ver itens e arquivos anexos",
+      "Marca como favorita e posiciona no funil compartilhado",
+      "Comenta movimentações e vê quem da equipe já visualizou o edital"
+    ],
+    "funcionalidades": [
+      "Busca textual com filtros e contagens sobre todo o histórico",
+      "Sincronização automática várias vezes ao dia",
+      "Detalhe com itens e arquivos, tolerante a instabilidades da fonte oficial",
+      "Favoritos e funil Kanban com etapas configuráveis",
+      "Histórico de eventos e indicador de quem visualizou",
+      "Permissões por usuário e linha do tempo de uso"
+    ],
+    "usuarios": "Equipe comercial e de licitações.",
+    "impacto": "Busca em cerca de 60 ms sobre cerca de 38 mil licitações abertas; substituiu a primeira versão do LICITA.",
+    "stack": [
+      "Node 22",
+      "TypeScript",
+      "Fastify 5",
+      "Prisma",
+      "PostgreSQL",
+      "Meilisearch",
+      "node-cron",
+      "React 19",
+      "Vite 6",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "TanStack Query",
+      "Zod",
+      "pnpm + Turborepo",
+      "Vitest",
+      "Docker (só deploy)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "contribui",
+    "commits": {
+      "meus": 1,
+      "total": 96
+    },
+    "inicio": "2026-07-20",
+    "ultimaAtividade": "2026-09-25",
+    "prints": [
+      {
+        "src": "midia/LICITA2/01-busca.webp",
+        "legenda": "Busca de licitações: resultados do espelho local em milissegundos"
+      },
+      {
+        "src": "midia/LICITA2/02-facetas.webp",
+        "legenda": "Filtros por situação, UF e portal de origem, com contagem por faceta"
+      },
+      {
+        "src": "midia/LICITA2/03-detalhe.webp",
+        "legenda": "Detalhe da licitação com prazos, valores, funil e quem já viu o edital"
+      },
+      {
+        "src": "midia/LICITA2/04-mover-funil.webp",
+        "legenda": "Movimento no funil com comentário: a equipe sabe o porquê"
+      },
+      {
+        "src": "midia/LICITA2/05-historico.webp",
+        "legenda": "Histórico do edital: quem moveu, para qual etapa e por quê"
+      },
+      {
+        "src": "midia/LICITA2/06-funil.webp",
+        "legenda": "Funil compartilhado da equipe em kanban, com etapas configuráveis"
+      }
+    ],
+    "video": "midia/LICITA2/video.mp4",
+    "poster": "midia/LICITA2/poster.jpg"
+  },
+  {
+    "repo": "flexibase-indicadores-mensais",
+    "nome": "Indicadores Mensais de Engenharia e Infraestrutura",
+    "sigla": "IND",
+    "categoria": "TI/Infra",
+    "resumo": "Roteiro para assistente de IA que coleta 14 indicadores mensais de entrega, disponibilidade e documentação e gera relatório com alertas.",
+    "problema": "O fechamento mensal dos indicadores de tecnologia exigia juntar números de fontes diferentes à mão, com risco de inconsistência. O roteiro padroniza as fontes e o método de cada indicador, gera sempre o mesmo modelo de relatório e separa o que é medição do mês do que é apenas retrato do momento.",
+    "comoUsa": [
+      "O membro da equipe pede ao assistente os indicadores do mês",
+      "Escolhe o período, os indicadores e os sistemas",
+      "O assistente verifica os acessos; o que não estiver disponível sai como não aplicável",
+      "Coleta cada indicador sem alterar nada",
+      "Pede valores manuais apenas quando não há fonte automática",
+      "Entrega o relatório com tabela-resumo, detalhe por sistema e alertas"
+    ],
+    "funcionalidades": [
+      "14 indicadores em quatro grupos: entrega, infraestrutura, qualidade e equipe",
+      "Frequência e taxa de falha das publicações",
+      "Disponibilidade e uso de recursos dos servidores",
+      "Taxa de sucesso dos backups",
+      "Tempo de revisão de código e cobertura de documentação",
+      "Coleta somente leitura, sem expor dados sensíveis"
+    ],
+    "usuarios": "Equipe de TI e desenvolvimento responsável pelo fechamento mensal.",
+    "impacto": null,
+    "stack": [
+      "Markdown (skill Claude Code)",
+      "GitHub CLI",
+      "SSH",
+      "Prometheus (PromQL)",
+      "Bash"
+    ],
+    "status": "em produção",
+    "temUI": false,
+    "tipo": "infra/docs",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 2
+    },
+    "inicio": "2026-07-22",
+    "ultimaAtividade": "2026-07-28",
+    "prints": [],
+    "video": null,
+    "poster": null
+  },
+  {
+    "repo": "SGQ",
+    "nome": "Sistema de Gestão da Qualidade",
+    "sigla": "SGQ",
+    "categoria": "Qualidade",
+    "resumo": "Digitaliza pedidos de manutenção de clientes, não conformidades, certificações, POPs, auditorias e pesquisas de satisfação da Qualidade.",
+    "problema": "O registro de não conformidades seguia um formulário em planilha, e os pedidos de manutenção de clientes exigiam buscar cliente, venda e produtos manualmente no ERP. O SGQ digitaliza esses fluxos com triagem, evidências e histórico, e centraliza o controle de prazos e versões de selos, certificações e POPs.",
+    "comoUsa": [
+      "Entra com o login corporativo conforme seu papel na Qualidade",
+      "Cria um pedido de manutenção buscando o cliente e a venda no ERP",
+      "Registra os problemas por item e anexa evidências",
+      "Acompanha os pedidos em Kanban, com lead time",
+      "Registra não conformidades com triagem, causa raiz e plano de ação",
+      "Gerencia selos, POPs, auditorias e pesquisas de satisfação"
+    ],
+    "funcionalidades": [
+      "Pedidos de manutenção com vários produtos e garantia sugerida",
+      "Consulta somente leitura de clientes e vendas no ERP",
+      "Kanban de etapas com lead time",
+      "Não conformidades com evidências, causa raiz e eficácia",
+      "Selos e certificações com prazos, custos e laudos",
+      "POPs versionados, auditorias e pesquisas NPS"
+    ],
+    "usuarios": "Setor de Qualidade e assistência técnica.",
+    "impacto": null,
+    "stack": [
+      "React 19",
+      "Vite 7",
+      "TypeScript",
+      "Express 5",
+      "SQLite (better-sqlite3)",
+      "Zod 4",
+      "Recharts",
+      "dnd-kit",
+      "pdfjs-dist",
+      "mammoth/docx-preview",
+      "SheetJS",
+      "web-push",
+      "Vitest",
+      "pnpm",
+      "Docker"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 133
+    },
+    "inicio": "2026-07-28",
+    "ultimaAtividade": "2026-10-18",
+    "prints": [
+      {
+        "src": "midia/SGQ/01-dashboard.webp",
+        "legenda": "Dashboard da Qualidade com PMs, NCs, atrasos e o que precisa de atenção"
+      },
+      {
+        "src": "midia/SGQ/02-tipos-manutencao.webp",
+        "legenda": "Volume diário de PMs e NCs e ranking dos tipos de manutenção"
+      },
+      {
+        "src": "midia/SGQ/03-kanban-manutencoes.webp",
+        "legenda": "Kanban dos Pedidos de Manutenção por etapa, com dias em aberto"
+      },
+      {
+        "src": "midia/SGQ/04-pm-detalhe.webp",
+        "legenda": "Pedido de Manutenção com cliente, venda, garantia e itens com problemas"
+      },
+      {
+        "src": "midia/SGQ/05-novo-pm.webp",
+        "legenda": "Abertura de um novo Pedido de Manutenção, etapa de solicitação"
+      },
+      {
+        "src": "midia/SGQ/06-nc-detalhe.webp",
+        "legenda": "Não conformidade em tratamento: registro, responsável, evidências e análise"
+      },
+      {
+        "src": "midia/SGQ/07-certificacoes.webp",
+        "legenda": "Selos e certificações em kanban: planejamento, auditoria e ativas"
+      }
+    ],
+    "video": "midia/SGQ/video.mp4",
+    "poster": "midia/SGQ/poster.jpg"
+  },
+  {
+    "repo": "SISTEMAS",
+    "nome": "Hub do Departamento de Sistemas",
+    "sigla": "SISTEMAS",
+    "categoria": "TI/Infra",
+    "resumo": "Central do departamento para demandas, projetos, GitHub, monitoramento, indicadores e orçamento de ferramentas, com dados vindos das integrações.",
+    "problema": "O departamento trabalhava com informações espalhadas em ferramentas que não conversavam: chamados triados à mão, entregas sem visão gerencial e indicadores lançados manualmente. O Hub reúne projetos, chamados, GitHub, monitoramento, indicadores e custos de ferramentas, coletando os dados das integrações em vez de redigitá-los.",
+    "comoUsa": [
+      "Entra com o login corporativo e vê o painel pessoal da semana",
+      "Cria projetos e trabalha no Kanban com responsável único e prazos",
+      "Abre um pull request, e o card avança sozinho até a entrega",
+      "Acompanha o funil de chamados do departamento",
+      "Consulta a saúde dos sistemas, erros e incidentes",
+      "No fechamento do mês, confere os indicadores apurados e o orçamento de ferramentas"
+    ],
+    "funcionalidades": [
+      "Projetos e Kanban com histórico imutável e lixeira",
+      "Atividades criadas e movidas automaticamente a partir do GitHub",
+      "Monitoramento próprio dos sistemas, com erros e incidentes",
+      "Indicadores do departamento apurados automaticamente",
+      "Orçamento de ferramentas em real e dólar, com relatório mensal em PDF",
+      "Caderno de notas e quadros com edição colaborativa em tempo real"
+    ],
+    "usuarios": "Equipe e gerência do Departamento de Sistemas; outros setores abrem chamados por formulário público.",
+    "impacto": "Absorveu o antigo sistema de custos de ferramentas e trocou a digitação manual dos indicadores do departamento por apuração automática.",
+    "stack": [
+      "React 19",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Radix UI (Flexibase Strict)",
+      "TanStack Query",
+      "React Router 7",
+      "dnd-kit",
+      "Tiptap + Yjs",
+      "Excalidraw",
+      "Recharts",
+      "jsPDF / pdf.js",
+      "vite-plugin-pwa",
+      "Supabase self-hosted (PostgreSQL, PostgREST, GoTrue, Storage, Realtime) com RLS e RPCs",
+      "Node.js worker (GitHub GraphQL, monitoramento, outbox WhatsApp)",
+      "Node.js gateway (formulário público + servidor MCP, @modelcontextprotocol/sdk)",
+      "Evolution API (WhatsApp)",
+      "pnpm + Turborepo",
+      "Vitest + testes SQL",
+      "Docker/nginx (blue-green →, GHCR)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "codev",
+    "commits": {
+      "meus": 128,
+      "total": 259
+    },
+    "inicio": "2026-07-28",
+    "ultimaAtividade": "2026-10-27",
+    "prints": [
+      {
+        "src": "midia/SISTEMAS/01-dashboard-gerencial.webp",
+        "legenda": "Dashboard gerencial: saúde do departamento e carga por pessoa"
+      },
+      {
+        "src": "midia/SISTEMAS/02-projetos.webp",
+        "legenda": "Projetos por etapa, com repositório, atividades abertas e equipe"
+      },
+      {
+        "src": "midia/SISTEMAS/03-kanban.webp",
+        "legenda": "Kanban do projeto com colunas ligadas ao PR e chat do time"
+      },
+      {
+        "src": "midia/SISTEMAS/04-atividade.webp",
+        "legenda": "Detalhe da atividade: responsável, prazo, dificuldade, checklist e histórico"
+      },
+      {
+        "src": "midia/SISTEMAS/05-indicadores.webp",
+        "legenda": "Indicadores mensais do departamento com cor por atingimento"
+      },
+      {
+        "src": "midia/SISTEMAS/06-github.webp",
+        "legenda": "PRs aguardando revisão, checks do CI e PRs abertos por repositório"
+      },
+      {
+        "src": "midia/SISTEMAS/07-monitoramento.webp",
+        "legenda": "Monitoramento dos servidores e da disponibilidade de cada sistema"
+      }
+    ],
+    "video": "midia/SISTEMAS/video.mp4",
+    "poster": "midia/SISTEMAS/poster.jpg"
+  },
+  {
+    "repo": "PROSP",
+    "nome": "Motor de Prospecção de Adesão a Atas",
+    "sigla": "PROSP",
+    "categoria": "Comercial",
+    "resumo": "Encontra órgãos públicos de Goiás que podem aderir às atas de registro de preço da empresa e entrega leads prontos ao vendedor.",
+    "problema": "Órgãos públicos podem aderir a atas de registro de preço existentes, mas descobrir quem quer comprar mobiliário, e se a lei permite, exigia ler fontes demais à mão. O motor varre dados abertos de compras públicas, aplica as regras legais de elegibilidade e entrega ao vendedor o contato, o fundamento legal e a mensagem.",
+    "comoUsa": [
+      "Cadastra a ata em que a empresa é fornecedora e vê quantos órgãos ficam elegíveis",
+      "Rotinas automáticas varrem dados públicos e geram sinais de demanda",
+      "O sistema encontra contatos e cruza sinais com as atas, aplicando elegibilidade e pontuação",
+      "O vendedor abre sua carteira, revisa o lead e aprova a mensagem",
+      "O envio respeita limites diários, e as respostas são classificadas automaticamente"
+    ],
+    "funcionalidades": [
+      "13 rotinas automáticas de coleta, contato, pontuação, envio e retenção",
+      "Regras de elegibilidade legal separadas da pontuação comercial",
+      "Descoberta de contatos em cascata",
+      "Painel de leads, carteira, órgãos e atas",
+      "Aprovação antes do envio, com limite diário e modo de teste",
+      "Descadastro, aviso de privacidade e trilha de auditoria (LGPD)"
+    ],
+    "usuarios": "Vendedores e gestão comercial voltados ao setor público.",
+    "impacto": "Em 10 dias de operação, a base de contatos passou de 1.366 para 5.166 e os sinais de demanda de 7.246 para 17.021; o envio real ainda está em modo de teste.",
+    "stack": [
+      "Python 3.13",
+      "FastAPI",
+      "SQLAlchemy 2",
+      "Alembic",
+      "PostgreSQL 16",
+      "APScheduler",
+      "httpx",
+      "Jinja2",
+      "Next.js 16",
+      "React 19",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Recharts",
+      "pytest + respx (361 testes sem rede)",
+      "Docker"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 185
+    },
+    "inicio": "2026-07-31",
+    "ultimaAtividade": "2026-09-11",
+    "prints": [
+      {
+        "src": "midia/PROSP/01-dashboard.webp",
+        "legenda": "Dashboard: travas de envio, maior gargalo, KPIs e funil da pipeline"
+      },
+      {
+        "src": "midia/PROSP/02-nova-ata.webp",
+        "legenda": "Nova ata: a esfera gerenciadora já mostra quantos órgãos de Goiás podem aderir"
+      },
+      {
+        "src": "midia/PROSP/03-leads.webp",
+        "legenda": "Leads com órgão, ata, oportunidade, score, status e bloqueios"
+      },
+      {
+        "src": "midia/PROSP/04-ficha-orgao.webp",
+        "legenda": "Ficha do órgão: fundamento legal, sinais de demanda, contatos e saldo de adesão"
+      },
+      {
+        "src": "midia/PROSP/05-email-dry-run.webp",
+        "legenda": "Prévia do e-mail montado para o órgão: fica em dry-run até o go-live"
+      },
+      {
+        "src": "midia/PROSP/06-minha-carteira.webp",
+        "legenda": "Minha carteira: leads atribuídos ao vendedor, valor e dias parado"
+      }
+    ],
+    "video": "midia/PROSP/video.mp4",
+    "poster": "midia/PROSP/poster.jpg"
+  },
+  {
+    "repo": "platform-ops",
+    "nome": "Governança da Infraestrutura",
+    "sigla": "Platform Ops",
+    "categoria": "TI/Infra",
+    "resumo": "Fonte única de verdade da infraestrutura: inventário, auditoria, decisões, procedimentos e roteiro de melhorias dos servidores.",
+    "problema": "O estado da infraestrutura estava espalhado entre servidores, projetos de código e anotações locais, sem um lugar oficial e auditável. O Platform Ops consolida inventário, riscos, procedimentos e decisões com coletores automáticos somente leitura e um roteiro de mudanças que só são executadas com aprovação, backup, validação e plano de retorno.",
+    "comoUsa": [
+      "A equipe consulta o mapa da infraestrutura, os riscos e as próximas ações",
+      "Roda coletores automáticos que levantam o estado dos servidores sem alterar nada",
+      "Gera o catálogo de serviços e valida o pacote de auditoria",
+      "Consulta a matriz de riscos antes de propor mudanças",
+      "Propõe e aprova mudanças por etapas, registrando o resultado",
+      "Gestores leem um guia em linguagem simples sobre as melhorias propostas"
+    ],
+    "funcionalidades": [
+      "Inventário de serviços, domínios, executores e projetos",
+      "Evidências de auditoria datadas e com verificação de integridade",
+      "Coletores automáticos somente leitura",
+      "Roteiro em 6 ondas com 12 mudanças planejadas",
+      "Registros de decisão, metas de recuperação e procedimentos operacionais",
+      "Guia em PDF para gestores não técnicos"
+    ],
+    "usuarios": "Equipe de plataforma e TI e responsáveis pelas aplicações.",
+    "impacto": "A auditoria inicial catalogou 92 containers em 35 serviços, 28 domínios e 26 projetos de código.",
+    "stack": [
+      "Python 3.14",
+      "PyYAML",
+      "OpenSSH",
+      "GitHub CLI",
+      "YAML",
+      "Markdown",
+      "JSON Schema",
+      "unittest"
+    ],
+    "status": "em produção",
+    "temUI": false,
+    "tipo": "infra/docs",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 39
+    },
+    "inicio": "2026-08-27",
+    "ultimaAtividade": "2026-10-30",
+    "prints": [],
+    "video": null,
+    "poster": null
+  },
+  {
+    "repo": "CGA",
+    "nome": "Gerador de Atas Automático",
+    "sigla": "CGA",
+    "categoria": "Comercial",
+    "resumo": "Gera atas de registro de preço e catálogos técnicos para licitações em PDF A4 padronizado, a partir de dados estruturados.",
+    "problema": "Cada ata de registro de preço exigia pedido ao marketing, montagem no Photoshop e várias revisões: cerca de 2 dias por documento, sem padrão visual. O CGA gera a ata e o catálogo técnico a partir de dados estruturados e templates A4 padronizados.",
+    "comoUsa": [
+      "Entra com o login corporativo e acompanha o painel de atas",
+      "Clica em Nova ata e preenche a capa com o órgão e os números do pregão",
+      "Adiciona lotes e itens com quantidade, valor, faixa de comissão e foto",
+      "Escolhe os acabamentos a partir da paleta padrão",
+      "Confere a prévia A4 e exporta o PDF",
+      "Para catálogos, cadastra cada produto uma vez na biblioteca e monta o documento por lote"
+    ],
+    "funcionalidades": [
+      "Assistente de ata em 4 etapas com gravação automática",
+      "Documento A4 com capa, itens, passo a passo, acabamentos e contracapa",
+      "Remoção do fundo das fotos com um clique",
+      "Biblioteca de produtos com textos técnicos montados por modelo",
+      "Gerador de catálogo de produtos para pregões",
+      "Perfis de acesso, lixeira, duplicação e histórico de auditoria"
+    ],
+    "usuarios": "Equipe comercial e de licitações que prepara atas e catálogos para órgãos públicos.",
+    "impacto": "De cerca de 2 dias para cerca de 5 minutos por ata, com padronização visual.",
+    "stack": [
+      "Next.js 15 (App Router)",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui (Radix)",
+      "Zod",
+      "react-hook-form",
+      "dnd-kit",
+      "Dexie (IndexedDB)",
+      "Supabase (Postgres, RLS, Storage)",
+      "Vitest",
+      "API remove.bg",
+      "Docker"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "criei",
+    "commits": {
+      "meus": 25,
+      "total": 43
+    },
+    "inicio": "2026-09-01",
+    "ultimaAtividade": "2026-10-30",
+    "prints": [
+      {
+        "src": "midia/CGA/01-dashboard.webp",
+        "legenda": "Dashboard com KPIs das atas e fila de itens incompletos"
+      },
+      {
+        "src": "midia/CGA/02-dashboard-graficos.webp",
+        "legenda": "Qualidade do catálogo, faixas de comissão e tendência mensal"
+      },
+      {
+        "src": "midia/CGA/03-atas.webp",
+        "legenda": "Lista de atas com número da ata, pregão e vigência"
+      },
+      {
+        "src": "midia/CGA/04-ata-capa.webp",
+        "legenda": "Etapa Capa: dados da ata com preview A4 ao vivo"
+      },
+      {
+        "src": "midia/CGA/05-ata-lotes.webp",
+        "legenda": "Lotes e itens com valor unitário, faixa de comissão e foto"
+      },
+      {
+        "src": "midia/CGA/06-ata-preview-itens.webp",
+        "legenda": "Preview A4 expandido: cards de itens com faixa de comissão"
+      },
+      {
+        "src": "midia/CGA/07-catalogo-preview.webp",
+        "legenda": "PDF do catálogo: especificação técnica de cada item"
+      },
+      {
+        "src": "midia/CGA/08-produto-editor.webp",
+        "legenda": "Editor de produto com prévia ao vivo da página de especificação"
+      }
+    ],
+    "video": "midia/CGA/video.mp4",
+    "poster": "midia/CGA/poster.jpg"
+  },
+  {
+    "repo": "CGR",
+    "nome": "Criador e Gerenciador de Recibos",
+    "sigla": "CGR",
+    "categoria": "Financeiro",
+    "resumo": "Cria, emite, confere e controla recibos numerados de serviços avulsos, como diárias, empreitas e parcelas.",
+    "problema": "Os recibos de serviços avulsos (diárias e empreitas) eram feitos no Word, sem numeração e sem controle de que a via assinada voltava ao financeiro. O CGR bloqueia a emissão com dados faltando e permite que qualquer pessoa autorizada do financeiro emita o recibo.",
+    "comoUsa": [
+      "Entra com o login corporativo e clica em Novo recibo",
+      "Escolhe tipo de serviço, departamento, período, prestador e valor, com prévia ao vivo",
+      "Emite o recibo: o sistema valida os campos e gera um código sequencial único",
+      "Imprime, colhe a assinatura do prestador e entrega ao financeiro",
+      "O financeiro anexa a foto da via assinada e conclui, ou nega com motivo"
+    ],
+    "funcionalidades": [
+      "Rascunhos com salvamento automático e prévia A4",
+      "Cálculo por tipo: diárias por dias úteis, parcelas e valor fechado",
+      "Numeração contínua que nunca reaproveita códigos",
+      "Conferência com foto do recibo assinado como comprovante",
+      "Rotinas automáticas para recibos parados e rascunhos esquecidos",
+      "Histórico de auditoria e CPF mascarado nas telas"
+    ],
+    "usuarios": "Solicitantes de diversos setores, equipe do financeiro e administradores.",
+    "impacto": "De 2 a 5 minutos por recibo, e o financeiro deixou de acumular a demanda em lote mensal.",
+    "stack": [
+      "Next.js 15 (App Router)",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS + shadcn/ui (Radix)",
+      "TanStack Query",
+      "React Hook Form + Zod",
+      "Zustand",
+      "Dexie (IndexedDB)",
+      "Supabase (Postgres, PostgREST, Storage, RLS, RPCs, pg_cron)",
+      "Vitest",
+      "Docker + GitHub Actions"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "criei",
+    "commits": {
+      "meus": 21,
+      "total": 30
+    },
+    "inicio": "2026-09-15",
+    "ultimaAtividade": "2026-09-21",
+    "prints": [
+      {
+        "src": "midia/CGR/01-dashboard.webp",
+        "legenda": "Dashboard do mês: recibos criados, negados, pendentes e totais por status"
+      },
+      {
+        "src": "midia/CGR/02-lista-recibos.webp",
+        "legenda": "Lista de recibos com indicadores, filtros e status de cada recibo"
+      },
+      {
+        "src": "midia/CGR/03-emissao-bloqueada.webp",
+        "legenda": "Emissão bloqueada: campos obrigatórios faltando ficam destacados"
+      },
+      {
+        "src": "midia/CGR/04-editor-preenchido.webp",
+        "legenda": "Editor do recibo com cálculo das diárias e pré-visualização A4 ao vivo"
+      },
+      {
+        "src": "midia/CGR/05-recibo-emitido.webp",
+        "legenda": "Recibo REC-2026-00038 emitido: dados, situação e documento A4 pronto para imprimir"
+      },
+      {
+        "src": "midia/CGR/06-conferencia.webp",
+        "legenda": "Conferência: fila de recibos emitidos e em validação por tempo de espera"
+      },
+      {
+        "src": "midia/CGR/07-concluir-via-assinada.webp",
+        "legenda": "Controle da via assinada: foto do papel devolvido e confirmação de recebimento"
+      },
+      {
+        "src": "midia/CGR/08-recibo-concluido.webp",
+        "legenda": "Recibo concluído com comprovante anexado e linha do tempo do histórico"
+      }
+    ],
+    "video": "midia/CGR/video.mp4",
+    "poster": "midia/CGR/poster.jpg"
+  },
+  {
+    "repo": "PONTO",
+    "nome": "RH Flexibase: Ponto e Folha",
+    "sigla": "PONTO",
+    "categoria": "RH",
+    "resumo": "Dá transparência à jornada a partir do relógio de ponto, com visões por nível hierárquico, ocorrências e folha de pagamento.",
+    "problema": "As marcações do relógio de ponto ficavam restritas ao RH, e colaboradores e lideranças não enxergavam atrasos, faltas, banco de horas e assiduidade. O sistema importa as marcações automaticamente, leva as justificativas de frequência para um fluxo com aprovação do RH e incorporou a consulta à folha de pagamento.",
+    "comoUsa": [
+      "Entra com o login corporativo, vinculado ao seu cadastro no RH",
+      "Abre Meu ponto e vê o calendário, o espelho diário e o banco de horas",
+      "A liderança acompanha a visão consolidada da equipe e a assiduidade",
+      "A liderança abre ocorrências com atestado e envia ao RH",
+      "O RH aprova, devolve ou reprova; só as aprovadas entram nos indicadores",
+      "Quem tem permissão importa a folha e consulta contracheques"
+    ],
+    "funcionalidades": [
+      "Sincronização automática com o relógio de ponto a cada 10 minutos",
+      "Visões por colaborador, equipe, gestão e direção",
+      "Regras de jornada e banco de horas com limite mensal",
+      "Assiduidade com semáforo por setor",
+      "Ocorrências da liderança para o RH com anexos e histórico",
+      "Módulo de folha com contracheques e gerador de artes de boas-vindas"
+    ],
+    "usuarios": "Colaboradores, lideranças e RH, com piloto iniciado junto ao RH.",
+    "impacto": "Na primeira carga, 6.335 marcações importadas sem registros órfãos e 166 pessoas levadas ao cadastro.",
+    "stack": [
+      "React 19",
+      "Vite 6",
+      "TypeScript",
+      "React Router 7",
+      "TanStack Query 5",
+      "shadcn/ui + Radix",
+      "Tailwind CSS 3",
+      "react-hook-form + zod",
+      "Supabase (Postgres + RLS + RPC + Storage)",
+      "Node 22 (worker clock-sync)",
+      "pnpm 9 + Turborepo",
+      "pdfjs-dist + pdf-lib",
+      "node:test + Vitest + pgTAP",
+      "Docker + nginx (deploy blue-green via GHCR)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 43
+    },
+    "inicio": "2026-10-01",
+    "ultimaAtividade": "2026-10-27",
+    "prints": [
+      {
+        "src": "midia/PONTO/01-meu-ponto.webp",
+        "legenda": "Meu ponto: resumo do mês, assiduidade e banco de horas do colaborador"
+      },
+      {
+        "src": "midia/PONTO/02-espelho-do-dia.webp",
+        "legenda": "Espelho de ponto: calendário com status de cada dia e as batidas previstas x realizadas"
+      },
+      {
+        "src": "midia/PONTO/03-equipe.webp",
+        "legenda": "Visão do gerente: resultado do mês, banco de horas e atenção por colaborador"
+      },
+      {
+        "src": "midia/PONTO/04-assinatura-gestor.webp",
+        "legenda": "Gerente revisa, assina e envia a ocorrência ao RH"
+      },
+      {
+        "src": "midia/PONTO/05-fila-rh.webp",
+        "legenda": "Fila do RH: ocorrências assinadas pelos gestores aguardando decisão"
+      },
+      {
+        "src": "midia/PONTO/06-decisao-rh.webp",
+        "legenda": "Painel de decisão do RH: aprovar como abonada, justificada ou não justificada"
+      },
+      {
+        "src": "midia/PONTO/07-direcao.webp",
+        "legenda": "Visão da direção: resultado do mês, banco de horas e atenção por gestor"
+      }
+    ],
+    "video": "midia/PONTO/video.mp4",
+    "poster": "midia/PONTO/poster.jpg"
+  },
+  {
+    "repo": "Site",
+    "nome": "Site Institucional e Catálogo",
+    "sigla": "Site",
+    "categoria": "Marketing",
+    "resumo": "Novo site institucional com catálogo de produtos por categoria, linha e ambiente, blog e canal de denúncia.",
+    "problema": "A marca precisava de um site que apresentasse o portfólio de móveis de forma navegável, rápida e bem posicionada nos buscadores. O novo site organiza categorias, linhas, acabamentos, desenhos técnicos e downloads, vai substituir o site atual e hospeda o canal de denúncia exigido pelo compliance.",
+    "comoUsa": [
+      "O visitante chega à página inicial com linhas, categorias e ambientes",
+      "Navega pelo menu até uma categoria e abre uma linha de produto",
+      "Vê cores, acabamentos, desenhos técnicos e downloads",
+      "Explora ambientes prontos e os produtos que os compõem",
+      "Fala com o comercial pelo WhatsApp ou envia um relato anônimo ao compliance"
+    ],
+    "funcionalidades": [
+      "Catálogo com 7 categorias e 25 linhas de produto",
+      "Páginas de ambientes e blog",
+      "Página institucional com linha do tempo",
+      "Canal de denúncia anônimo",
+      "Otimização completa para buscadores",
+      "Design system documentado e acessível"
+    ],
+    "usuarios": "Clientes, especificadores e revendas; conteúdo mantido por Marketing e Comercial.",
+    "impacto": "Nota 100 em Acessibilidade, Boas práticas e SEO no Lighthouse mobile da página inicial, com 49 páginas estáticas.",
+    "stack": [
+      "Next.js 16 (App Router)",
+      "React 19",
+      "TypeScript strict",
+      "Tailwind CSS v4",
+      "lucide-react",
+      "Three.js (previsto para 3D das cadeiras)",
+      "Nodemailer",
+      "ESLint + Prettier",
+      "pnpm"
+    ],
+    "status": "em desenvolvimento",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 65
+    },
+    "inicio": "2026-10-01",
+    "ultimaAtividade": "2026-10-19",
+    "prints": [
+      {
+        "src": "midia/Site/01-home.webp",
+        "legenda": "Home com a vitrine das linhas de cadeiras, mesas e espera"
+      },
+      {
+        "src": "midia/Site/02-catalogo.webp",
+        "legenda": "Catálogo: todas as categorias de mobiliário corporativo"
+      },
+      {
+        "src": "midia/Site/03-categoria-assentos.webp",
+        "legenda": "Categoria Assentos: linhas de cadeiras operacionais e de diretoria"
+      },
+      {
+        "src": "midia/Site/04-produto-linha-zara.webp",
+        "legenda": "Página da linha: galeria, diferenciais e pedido de orçamento"
+      },
+      {
+        "src": "midia/Site/05-produto-desenhos.webp",
+        "legenda": "Desenhos técnicos da linha com as medidas de cada modelo"
+      },
+      {
+        "src": "midia/Site/06-denuncia-protocolo.webp",
+        "legenda": "Relato enviado: protocolo gerado para acompanhamento"
+      }
+    ],
+    "video": "midia/Site/video.mp4",
+    "poster": "midia/Site/poster.jpg"
+  },
+  {
+    "repo": "TI",
+    "nome": "Indicadores e Monitoramento da TI",
+    "sigla": "TI",
+    "categoria": "TI/Infra",
+    "resumo": "Painel do departamento de TI que une chamados, monitoramento de rede e computadores, indicadores de SLA e inventário.",
+    "problema": "Os chamados de TI estavam divididos entre o portal atual e um sistema antigo, sem visão consolidada de prazos, demanda por setor e carga da equipe. O painel une esses dados ao monitoramento da rede e dos computadores e envia automaticamente os indicadores de TI ao SGI.",
+    "comoUsa": [
+      "Entra com o login corporativo conforme seu nível de acesso",
+      "Abre o painel com a fila atual, o status da rede e as metas de atendimento",
+      "Analisa volume, setores, tipos e cumprimento de SLA",
+      "Acompanha a rede em tempo real e a ficha de cada computador",
+      "Consulta inventário e licenças",
+      "O administrador revisa os indicadores e envia ao SGI, ou deixa o envio automático"
+    ],
+    "funcionalidades": [
+      "Indicadores de atendimento em horário útil, com SLA por tipo",
+      "Chamados do portal atual e do histórico anterior num só modelo",
+      "Status da rede em tempo real",
+      "Computadores, inventário e licenças",
+      "Envio automático dos indicadores mensais ao SGI",
+      "Mapa da infraestrutura para exibição em TV"
+    ],
+    "usuarios": "Equipe e gestão de TI.",
+    "impacto": null,
+    "stack": [
+      "React 19",
+      "Vite 6",
+      "React Router 7",
+      "TanStack Query 5",
+      "shadcn/ui + Radix",
+      "Tailwind CSS (design system Flexibase Strict)",
+      "Recharts",
+      "Supabase (PostgreSQL, RLS, Realtime)",
+      "Node 22 (ti-monitor)",
+      "Zabbix 7.0",
+      "Wazuh",
+      "pnpm + Turborepo",
+      "node:test",
+      "Docker/nginx"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 60
+    },
+    "inicio": "2026-10-01",
+    "ultimaAtividade": "2026-10-29",
+    "prints": [
+      {
+        "src": "midia/TI/01-painel.webp",
+        "legenda": "Painel do TI com fila, rede, computadores e metas de atendimento"
+      },
+      {
+        "src": "midia/TI/02-chamados.webp",
+        "legenda": "Chamados em aberto com tempo útil, responsável e meta de prazo"
+      },
+      {
+        "src": "midia/TI/03-demanda.webp",
+        "legenda": "Demanda por tipo de suporte, setor e solicitante"
+      },
+      {
+        "src": "midia/TI/04-rede.webp",
+        "legenda": "Rede em tempo real com equipamento fora do ar e latência"
+      },
+      {
+        "src": "midia/TI/05-seguranca.webp",
+        "legenda": "Segurança com alertas por criticidade e problemas abertos na rede"
+      },
+      {
+        "src": "midia/TI/06-mapa.webp",
+        "legenda": "Mapa do TI ao vivo com estações, servidores, rede e eventos"
+      }
+    ],
+    "video": "midia/TI/video.mp4",
+    "poster": "midia/TI/poster.jpg"
+  },
+  {
+    "repo": "flexibase-design-system",
+    "nome": "Design System Flexibase – Graphite Executive",
+    "sigla": "DS",
+    "categoria": "TI/Infra",
+    "resumo": "Guia e kit que fazem toda tela nova dos sistemas internos seguir a mesma identidade visual, em modo claro e escuro.",
+    "problema": "Os sistemas internos nasceram com visuais diferentes, sem uma identidade comum entre eles. O design system do PMC foi documentado como guia para assistentes de IA e ganhou um script que copia componentes, cores e configurações para qualquer app novo, levando o design ao código sem reinterpretação.",
+    "comoUsa": [
+      "O desenvolvedor instala o guia no seu assistente de IA",
+      "Ao pedir uma tela, formulário ou tabela, o assistente usa só os componentes e cores do padrão",
+      "Para um app novo, roda o script que copia o kit e indica as dependências",
+      "Designers desenham no projeto do design system e fazem a passagem para o código",
+      "Novos componentes entram no PMC e são sincronizados para os demais"
+    ],
+    "funcionalidades": [
+      "Regras de interface: cores padronizadas, modo escuro, acessibilidade e textos em português",
+      "Catálogo de 35 componentes com orientação de uso",
+      "Guia de modo escuro com roteiro de teste",
+      "Script que copia 42 arquivos do kit e registra a versão de origem",
+      "Fluxo de design com passagem para o código",
+      "Checklist de revisão para telas"
+    ],
+    "usuarios": "Desenvolvedores e designers dos sistemas internos.",
+    "impacto": "Kit validado em app novo e já aplicado no PRJ e no redesenho do SGE.",
+    "stack": [
+      "Markdown (skill Claude Code)",
+      "Node.js (script .mjs)",
+      "shadcn/ui",
+      "Radix UI",
+      "Tailwind CSS 3",
+      "Claude Design"
+    ],
+    "status": "em produção",
+    "temUI": false,
+    "tipo": "infra/docs",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 2
+    },
+    "inicio": "2026-10-02",
+    "ultimaAtividade": "2026-10-02",
+    "prints": [],
+    "video": null,
+    "poster": null
+  },
+  {
+    "repo": "oee",
+    "nome": "App do Tablet da Máquina",
+    "sigla": "OEE",
+    "categoria": "Produção",
+    "resumo": "App de tablet ao lado de cada máquina para registrar jornada, paradas, rotinas e chamados, funcionando mesmo sem internet.",
+    "problema": "Operadores com alta rotatividade precisavam registrar, na própria máquina e mesmo sem internet, paradas, rotinas, chamados e o início da jornada. O app de tablet tem interface simplificada, identifica o operador por nome e foto e envia tudo automaticamente ao TPM.",
+    "comoUsa": [
+      "O gestor vincula o tablet à máquina com login ou QR Code gerado no TPM",
+      "No início da jornada, o operador digita o nome e tira uma foto",
+      "Na parada, escolhe o motivo, e o app fica num cronômetro até o retorno",
+      "Marca os itens da rotina diária como OK ou não OK",
+      "Abre chamados de manutenção e consulta o manual da máquina",
+      "Os registros sobem sozinhos ao TPM quando há conexão"
+    ],
+    "funcionalidades": [
+      "Vinculação do tablet à máquina por login ou QR Code",
+      "Início de jornada com nome e foto",
+      "Paradas com motivos padronizados e cronômetro",
+      "Checklist de rotinas com observação obrigatória quando não OK",
+      "Chamados que entram direto na fila de manutenção do TPM",
+      "Funcionamento offline, manual em PDF, três idiomas e modo daltônico"
+    ],
+    "usuarios": "Operadores de máquina no chão de fábrica; os dados são usados por manutenção, planejamento e gestão no TPM.",
+    "impacto": "Paradas, rotinas, chamados e início de jornada chegam ao TPM automaticamente por máquina; piloto com expansão prevista para mais de 15 tablets.",
+    "stack": [
+      "React Native 0.86",
+      "Expo SDK 57",
+      "expo-router",
+      "TypeScript",
+      "expo-sqlite + Drizzle ORM",
+      "Zustand",
+      "TanStack Query",
+      "react-hook-form + zod",
+      "expo-camera (fotos e leitura de QR)",
+      "react-native-webview + PDF.js",
+      "Módulo nativo Kotlin (modules/dns-reserva)",
+      "Hono (mock do TPM)",
+      "Jest + React Native Testing Library",
+      "GitHub Actions (CI e build do APK assinado)",
+      "Supabase do TPM (RPCs TPM_oee_v1_*)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "react-native",
+    "papel": "criei",
+    "commits": {
+      "meus": 119,
+      "total": 119
+    },
+    "inicio": "2026-10-05",
+    "ultimaAtividade": "2026-10-30",
+    "prints": [
+      {
+        "src": "midia/oee/01-inicio-jornada.webp",
+        "legenda": "Início da jornada: tablet travado até o operador digitar o nome e tirar a foto"
+      },
+      {
+        "src": "midia/oee/02-dashboard.webp",
+        "legenda": "Tela inicial da CNC Biesse Rover: relógio, conexão, meta, avisos e os atalhos Parada, Rotinas, Chamado e Manual"
+      },
+      {
+        "src": "midia/oee/03-motivos-parada.webp",
+        "legenda": "Registrar parada: motivos padronizados (P01 a P07, almoço, fim de expediente ou outro motivo)"
+      },
+      {
+        "src": "midia/oee/04-parada-ativa.webp",
+        "legenda": "Parada em andamento: app travado com motivo, cronômetro e quem parou"
+      },
+      {
+        "src": "midia/oee/05-checklist.webp",
+        "legenda": "Checklist da limpeza diária: OK/NOK por item, com observação obrigatória no NOK"
+      },
+      {
+        "src": "midia/oee/06-chamado.webp",
+        "legenda": "Abrir chamado: categoria Vermelho/Verde/Azul, data e hora da ocorrência e descrição do problema"
+      },
+      {
+        "src": "midia/oee/07-manual.webp",
+        "legenda": "Manual da máquina aberto no leitor de PDF embutido do app"
+      },
+      {
+        "src": "midia/oee/08-configuracoes.webp",
+        "legenda": "Configurações: envio ao TPM (pendentes, recusados, Enviar agora), tema, idioma e modo daltônico"
+      }
+    ],
+    "video": "midia/oee/video.mp4",
+    "poster": "midia/oee/poster.jpg"
+  },
+  {
+    "repo": "PRJ",
+    "nome": "Acervo de Projetos",
+    "sigla": "PRJ",
+    "categoria": "Produção",
+    "resumo": "Acervo pesquisável dos desenhos técnicos em PDF, com leitura automática do carimbo, revisões, famílias e auditoria.",
+    "problema": "Os PDFs de desenho técnico ficavam soltos na rede, ninguém sabia se um móvel já tinha sido desenhado e o trabalho acabava refeito. O PRJ cria um acervo único em que, antes de desenhar, a pessoa busca por código, nome, projetista, família ou medidas.",
+    "comoUsa": [
+      "Entra com o login corporativo",
+      "Busca projetos por código, nome, projetista, família ou medidas",
+      "Envia vários PDFs de uma vez; o sistema lê o carimbo e preenche os dados",
+      "Abre o projeto para ver revisões e abrir ou baixar o desenho",
+      "Agrupa projetos em famílias",
+      "O administrador consulta a auditoria e gerencia a lixeira"
+    ],
+    "funcionalidades": [
+      "Busca instantânea tolerante a acentos e com filtro por medidas",
+      "Envio em lote com leitura automática do carimbo",
+      "Controle de revisões por projeto",
+      "Famílias de projetos",
+      "Lixeira e auditoria de alterações e downloads",
+      "Gestão de usuários e permissões"
+    ],
+    "usuarios": "Equipe de projetos e engenharia de produto e demais áreas que consultam desenhos.",
+    "impacto": null,
+    "stack": [
+      "React 19",
+      "Vite 6",
+      "TypeScript",
+      "Tailwind CSS 3.4",
+      "design system Flexibase (shadcn/ui + Radix, kit do PMC)",
+      "TanStack Query",
+      "TanStack Table",
+      "React Router 7",
+      "pdfjs-dist",
+      "Supabase (Postgres, Storage, RLS)",
+      "SSO Flexibase (spa-bridge)",
+      "Vitest"
+    ],
+    "status": "em desenvolvimento",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 3
+    },
+    "inicio": "2026-10-09",
+    "ultimaAtividade": "2026-10-09",
+    "prints": [
+      {
+        "src": "midia/PRJ/01-projetos.webp",
+        "legenda": "Acervo de projetos com família, medidas L × P × A, revisão atual e status"
+      },
+      {
+        "src": "midia/PRJ/02-enviar-carimbo.webp",
+        "legenda": "Envio em lote: código, nome, revisão, projetista e medidas lidos do carimbo do PDF"
+      },
+      {
+        "src": "midia/PRJ/03-projeto-revisoes.webp",
+        "legenda": "Detalhe do projeto com o histórico de revisões do desenho"
+      },
+      {
+        "src": "midia/PRJ/04-desenho-pdf.webp",
+        "legenda": "Desenho técnico em PDF aberto direto do acervo"
+      },
+      {
+        "src": "midia/PRJ/05-auditoria.webp",
+        "legenda": "Trilha de auditoria de alterações e acessos (somente admin)"
+      }
+    ],
+    "video": "midia/PRJ/video.mp4",
+    "poster": "midia/PRJ/poster.jpg"
+  },
+  {
+    "repo": "Flexineed",
+    "nome": "Portal de Vagas",
+    "sigla": "Flexineed",
+    "categoria": "RH",
+    "resumo": "Portal público de vagas em que candidatos se inscrevem sem login e o RH conduz o processo seletivo por etapas.",
+    "problema": "O RH precisava divulgar vagas, receber currículos de forma organizada e acompanhar cada candidato no processo seletivo. O portal publica as vagas de forma visível nos buscadores, recebe candidaturas com consentimento, envia e-mails automáticos e apaga dados antigos para atender à LGPD.",
+    "comoUsa": [
+      "O candidato busca vagas por cargo, área ou cidade",
+      "Preenche a candidatura, anexa o currículo e dá consentimento",
+      "Recebe um e-mail com link pessoal para acompanhar a etapa",
+      "O RH cria e publica vagas no painel administrativo",
+      "Avalia candidatos, registra notas internas e move cada um pelas etapas",
+      "Exporta a lista de candidatos ou busca em todas as vagas"
+    ],
+    "funcionalidades": [
+      "Vagas públicas com busca e otimização para o Google for Jobs",
+      "Candidatura sem login com envio de currículo",
+      "Link de acompanhamento para o candidato",
+      "E-mails automáticos de confirmação e mudança de etapa",
+      "Painel do RH com funil de etapas e banco de talentos",
+      "Exclusão automática de candidaturas inativas há 12 meses"
+    ],
+    "usuarios": "Candidatos externos e equipe de RH.",
+    "impacto": null,
+    "stack": [
+      "Next.js 16 (App Router)",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Supabase (Postgres + Storage)",
+      "TipTap",
+      "Nodemailer",
+      "Zod",
+      "sanitize-html",
+      "Vitest",
+      "Docker",
+      "GitHub Actions (blue-green)"
+    ],
+    "status": "em desenvolvimento",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 2
+    },
+    "inicio": "2026-10-19",
+    "ultimaAtividade": "2026-10-19",
+    "prints": [
+      {
+        "src": "midia/Flexineed/01-portal-vagas.webp",
+        "legenda": "Portal público de vagas com busca por cargo, cidade, área e modalidade"
+      },
+      {
+        "src": "midia/Flexineed/02-candidatura.webp",
+        "legenda": "Vaga de Operador de seccionadora com formulário de candidatura preenchido"
+      },
+      {
+        "src": "midia/Flexineed/03-acompanhamento.webp",
+        "legenda": "Página de acompanhamento da candidatura, enviada ao candidato por e-mail"
+      },
+      {
+        "src": "midia/Flexineed/04-painel-rh.webp",
+        "legenda": "Painel do RH com vagas, situação das inscrições e candidatos em andamento"
+      },
+      {
+        "src": "midia/Flexineed/05-candidatos-vaga.webp",
+        "legenda": "Candidatos da vaga com etapa de cada um e exportação em CSV"
+      },
+      {
+        "src": "midia/Flexineed/06-ficha-candidata.webp",
+        "legenda": "Ficha da candidatura com etapa \"Entrevista\", currículo e notas internas do RH"
+      }
+    ],
+    "video": "midia/Flexineed/video.mp4",
+    "poster": "midia/Flexineed/poster.jpg"
+  },
+  {
+    "repo": "contracheques",
+    "nome": "Contracheques e Análise da Folha",
+    "sigla": "CCQ",
+    "categoria": "RH",
+    "resumo": "Extrai os dados da folha de pagamento em PDF, confere os totais e permite consultar, exportar e analisar gastos por departamento.",
+    "problema": "A folha de pagamento chegava como um PDF analítico por empresa, difícil de consultar, comparar entre meses e somar por setor. O sistema transforma o PDF em dados conferidos automaticamente contra o total geral e reúne pagamentos de PJ e lançamentos manuais; depois foi incorporado como módulo de folha do RH Flexibase.",
+    "comoUsa": [
+      "Entra com o login corporativo conforme seu perfil",
+      "Importa o PDF da folha do mês, que é lido e conferido com o total geral",
+      "Importa o relatório de pagamentos PJ do ERP",
+      "Busca contracheques e o histórico de cada colaborador",
+      "Registra lançamentos manuais e analisa gastos por departamento",
+      "Exporta os dados para Excel"
+    ],
+    "funcionalidades": [
+      "Leitura automática da folha em PDF com conferência de totais",
+      "Pagamentos PJ a partir do ERP",
+      "Busca, detalhe e histórico por colaborador",
+      "Painel de gastos por departamento e seção",
+      "Lançamentos manuais e exportação para Excel",
+      "Perfis de acesso e trilha de auditoria"
+    ],
+    "usuarios": "RH, departamento pessoal e gestão.",
+    "impacto": null,
+    "stack": [
+      "React 19",
+      "Vite 6",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui + Radix",
+      "TanStack Query/Table",
+      "React Router 7",
+      "pdfjs-dist",
+      "pdf-lib",
+      "SheetJS (xlsx)",
+      "Supabase (PostgreSQL, RLS, Storage)",
+      "Vitest",
+      "pnpm",
+      "Docker/nginx"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 68
+    },
+    "inicio": "2026-10-19",
+    "ultimaAtividade": "2026-10-29",
+    "prints": [
+      {
+        "src": "midia/contracheques/01-painel.webp",
+        "legenda": "Painel da folha com totais do mês, evolução mensal e composição"
+      },
+      {
+        "src": "midia/contracheques/02-departamentos.webp",
+        "legenda": "Gasto por departamento somando folha, PJ e lançamentos manuais"
+      },
+      {
+        "src": "midia/contracheques/03-contracheques.webp",
+        "legenda": "Lista de contracheques com competência, seção, função e líquido"
+      },
+      {
+        "src": "midia/contracheques/04-contracheque-detalhe.webp",
+        "legenda": "Detalhe do contracheque com proventos, descontos e bases"
+      },
+      {
+        "src": "midia/contracheques/05-historico-colaborador.webp",
+        "legenda": "Histórico mensal da colaboradora com proventos, descontos e líquido"
+      },
+      {
+        "src": "midia/contracheques/06-pagamentos-pj.webp",
+        "legenda": "Pagamentos a prestadores PJ com vencimento, setor e status"
+      }
+    ],
+    "video": "midia/contracheques/video.mp4",
+    "poster": "midia/contracheques/poster.jpg"
+  },
+  {
+    "repo": "GFB",
+    "nome": "Coletor de Feedbacks",
+    "sigla": "GFB · Echo",
+    "categoria": "Corporativo",
+    "resumo": "Cria formulários de feedback a partir de modelos, coleta respostas por link, QR Code ou entrevista e consolida os resultados.",
+    "problema": "Depois de cada treinamento era preciso medir se as pessoas estavam usando os sistemas novos, e não havia como coletar e consolidar opinião de forma padronizada. O GFB cria formulários a partir de modelos, coleta respostas por QR Code, WhatsApp ou entrevista no celular e consolida médias e indicadores.",
+    "comoUsa": [
+      "Entra com o login corporativo e cadastra o assunto a ser avaliado",
+      "Cria o formulário a partir de um modelo pronto ou em branco",
+      "Publica e compartilha o link ou o QR Code impresso",
+      "Para quem não usa o link, registra as respostas em entrevista pelo celular",
+      "Abre os resultados, filtra por canal e período e exporta o relatório"
+    ],
+    "funcionalidades": [
+      "Modelos de formulário reaproveitáveis",
+      "7 tipos de pergunta, incluindo perguntas condicionais",
+      "Coleta por link público sem login ou por entrevista",
+      "Rodadas periódicas com link fixo para a rodada atual",
+      "Resultados com gráficos e exportação em CSV, Excel e PDF",
+      "Bloqueio de respostas repetidas e histórico de ações"
+    ],
+    "usuarios": "Equipe de sistemas e gestores que avaliam sistemas, treinamentos e atendimentos; respondem colaboradores de todos os setores, inclusive do chão de fábrica.",
+    "impacto": "Criado para medir a adoção dos próprios sistemas após os treinamentos.",
+    "stack": [
+      "React 19",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Radix UI / Flexibase Design System (shadcn)",
+      "TanStack Query",
+      "TanStack Table",
+      "React Router 7",
+      "react-hook-form + zod",
+      "dnd-kit",
+      "exceljs",
+      "@react-pdf/renderer",
+      "qrcode.react",
+      "Supabase self-hosted (PostgreSQL + PostgREST, RLS e RPCs)",
+      "Node auth-bridge (jose) para SSO OIDC",
+      "pnpm + Turborepo",
+      "Vitest + PGlite",
+      "Docker/nginx (deploy blue-green)"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "criei",
+    "commits": {
+      "meus": 94,
+      "total": 94
+    },
+    "inicio": "2026-10-21",
+    "ultimaAtividade": "2026-10-28",
+    "prints": [
+      {
+        "src": "midia/GFB/01-dashboard.webp",
+        "legenda": "Dashboard com rodadas abertas, média de 30 dias, notas em queda e prazos"
+      },
+      {
+        "src": "midia/GFB/02-projetos.webp",
+        "legenda": "Projetos (assuntos) por tipo, com rotina periódica e última rodada"
+      },
+      {
+        "src": "midia/GFB/03-novo-formulario-modelo.webp",
+        "legenda": "Novo formulário: escolha do modelo com prévia de como o respondente vê"
+      },
+      {
+        "src": "midia/GFB/04-publicado-qrcode.webp",
+        "legenda": "Formulário publicado: link público /r/<token> e QR Code para imprimir"
+      },
+      {
+        "src": "midia/GFB/05-resposta-celular.webp",
+        "legenda": "Página pública de resposta no celular, aberta pelo link ou QR Code"
+      },
+      {
+        "src": "midia/GFB/06-resultados.webp",
+        "legenda": "Resultados da rodada: total por canal, média geral e gráficos por pergunta"
+      },
+      {
+        "src": "midia/GFB/07-resultados-graficos.webp",
+        "legenda": "Distribuição das notas e Sim/Não por pergunta, com filtros por canal e período"
+      },
+      {
+        "src": "midia/GFB/08-historico.webp",
+        "legenda": "Histórico de ações: publicação, respostas pelo link e entrevistas"
+      }
+    ],
+    "video": "midia/GFB/video.mp4",
+    "poster": "midia/GFB/poster.jpg"
+  },
+  {
+    "repo": "SUPPLY",
+    "nome": "Central de Tarefas Supply",
+    "sigla": "SUPPLY",
+    "categoria": "Suprimentos",
+    "resumo": "Organiza a reunião semanal do Supply: tarefas por área, atas em PDF, rotinas, decisões e desempenho contra meta.",
+    "problema": "A reunião semanal de alinhamento do Supply, com cinco áreas, era conduzida num arquivo único sem login, sem permissões e sem histórico. O sistema manteve o que esse protótipo fazia e acrescentou login corporativo, permissão por área, histórico, comentários, notificações e atas como registro formal.",
+    "comoUsa": [
+      "Entra com o login corporativo e abre Minha semana",
+      "Lança tarefas no quadro com área, executor, prazo e ações",
+      "Na reunião, abre a ata da área, registra presença e gera o PDF",
+      "Na retrospectiva, registra decisões com dono e prazo",
+      "Marca as rotinas recorrentes e consulta a agenda",
+      "O gestor acompanha o desempenho mensal e a carga do time"
+    ],
+    "funcionalidades": [
+      "Quadro Kanban ou lista por área, com comentários e histórico",
+      "Atas da reunião semanal e da retrospectiva em PDF",
+      "Decisões com prazo que viram tarefas",
+      "Desempenho mensal contra meta e visão do gestor",
+      "Rotinas, agenda e alerta de sobrecarga",
+      "Consulta integrada a PMC, SGI e Portal de Chamados"
+    ],
+    "usuarios": "Gestor, gerentes e executores das áreas de Compras, PCP/Engenharia, Manutenção, Estoque e Supply.",
+    "impacto": "Substituiu o arquivo usado na reunião semanal por um sistema com login, permissões e histórico.",
+    "stack": [
+      "React 19",
+      "Vite 6",
+      "TypeScript",
+      "react-router 7",
+      "Tailwind CSS 3.4",
+      "shadcn/ui + Radix (Design System Graphite Executive)",
+      "React Hook Form + Zod",
+      "Recharts",
+      "jsPDF",
+      "dnd-kit",
+      "supabase-js",
+      "Supabase (PostgreSQL 15, Auth, PostgREST, Realtime)",
+      "Vitest",
+      "pnpm 11 + Turborepo",
+      "Docker + NGINX"
+    ],
+    "status": "em produção",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 53
+    },
+    "inicio": "2026-10-21",
+    "ultimaAtividade": "2026-10-23",
+    "prints": [
+      {
+        "src": "midia/SUPPLY/01-dashboard.webp",
+        "legenda": "Dashboard da semana: reuniões pendentes e chamados de cada área"
+      },
+      {
+        "src": "midia/SUPPLY/02-quadro.webp",
+        "legenda": "Quadro de tarefas por status, com área, prioridade, prazo e ações"
+      },
+      {
+        "src": "midia/SUPPLY/03-reuniao-ras.webp",
+        "legenda": "ATA da Reunião de Alinhamento Semanal: presença dos convocados, objetivo e pauta"
+      },
+      {
+        "src": "midia/SUPPLY/04-atas.webp",
+        "legenda": "Lista de ATAs das reuniões RAS e Q3, com PDF das atas fechadas"
+      },
+      {
+        "src": "midia/SUPPLY/05-desempenho.webp",
+        "legenda": "Desempenho mensal por pessoa contra a meta de 70%"
+      },
+      {
+        "src": "midia/SUPPLY/06-gestor.webp",
+        "legenda": "Visão do gestor: tendência semanal e desempenho mensal de cada área contra a meta"
+      }
+    ],
+    "video": "midia/SUPPLY/video.mp4",
+    "poster": "midia/SUPPLY/poster.jpg"
+  },
+  {
+    "repo": "ACESSO",
+    "nome": "Portal de Acesso Universal",
+    "sigla": "ACESSO",
+    "categoria": "Corporativo",
+    "resumo": "Página única com o catálogo dos sistemas internos, destacando os que cada colaborador mais usa.",
+    "problema": "Com dezenas de sistemas internos, cada um em seu próprio endereço, o colaborador precisava lembrar onde ficava cada ferramenta. O portal reúne todos os atalhos numa só página, ordena os apps pelo uso real de cada pessoa e mostra quais ela ainda não tem permissão para abrir.",
+    "comoUsa": [
+      "Abre o portal e vê o catálogo completo de sistemas, mesmo sem login",
+      "Entra com o login único corporativo e volta para a mesma página",
+      "Encontra em destaque os apps que mais abriu nos últimos 90 dias",
+      "Clica no card do sistema desejado para abri-lo",
+      "Ajusta nome de exibição e foto no perfil e consulta seus acessos"
+    ],
+    "funcionalidades": [
+      "Catálogo de cerca de 29 sistemas internos com descrição curta",
+      "Ranking personalizado pelo uso dos últimos 90 dias",
+      "Indicação visual dos apps sem permissão",
+      "Perfil com foto, segurança e lista de acessos",
+      "Entrada e saída integradas ao login único de todos os apps"
+    ],
+    "usuarios": "Todos os colaboradores que usam os sistemas internos.",
+    "impacto": null,
+    "stack": [
+      "React 19",
+      "Vite 8",
+      "TypeScript",
+      "Supabase (RPCs do schema portal + Storage)",
+      "SSO Flexibase (spa-bridge)",
+      "nginx",
+      "Docker",
+      "GitHub Actions (blue-green)",
+      "Vitest"
+    ],
+    "status": "em desenvolvimento",
+    "temUI": true,
+    "tipo": "web",
+    "papel": "equipe",
+    "commits": {
+      "meus": 0,
+      "total": 3
+    },
+    "inicio": "2026-10-27",
+    "ultimaAtividade": "2026-10-27",
+    "prints": [
+      {
+        "src": "midia/ACESSO/01-catalogo-anonimo.webp",
+        "legenda": "Catálogo público de sistemas internos, visto por um visitante sem login"
+      },
+      {
+        "src": "midia/ACESSO/02-apps-mais-usados.webp",
+        "legenda": "Logado: os 8 apps mais abertos nos últimos 90 dias aparecem em destaque"
+      },
+      {
+        "src": "midia/ACESSO/03-apps-bloqueados.webp",
+        "legenda": "Todos os apps: liberados em tamanho menor e bloqueados com aviso para pedir acesso à TI"
+      },
+      {
+        "src": "midia/ACESSO/04-configuracao-perfil.webp",
+        "legenda": "Configuração da conta: nome de exibição, foto, usuário e e-mail do cadastro"
+      },
+      {
+        "src": "midia/ACESSO/05-meus-acessos.webp",
+        "legenda": "Meus acessos: lista de sistemas com a situação Liberado ou Sem acesso"
+      }
+    ],
+    "video": "midia/ACESSO/video.mp4",
+    "poster": "midia/ACESSO/poster.jpg"
+  }
+]
